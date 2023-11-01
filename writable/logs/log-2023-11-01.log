@@ -1,0 +1,234 @@
+CRITICAL - 2023-11-01 04:20:22 --> syntax error, unexpected end of file
+in APPPATH\Config\Routes.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 04:20:45 --> syntax error, unexpected end of file
+in APPPATH\Config\Routes.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 04:20:53 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\SignupController.php on line 37.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\E-BookMO\\app\\Controllers\\SignupController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SignupController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SignupController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\SignupController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 04:21:12 --> Call to undefined function set_value()
+in APPPATH\Views\try.php on line 40.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('try', [], true)
+ 4 APPPATH\Controllers\SignupController.php(53): view('try')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->try()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 04:23:54 --> Call to undefined function set_value()
+in APPPATH\Views\try.php on line 40.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('try', [], true)
+ 4 APPPATH\Controllers\SignupController.php(53): view('try')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->try()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 04:56:35 --> Invalid file: "View/Home/include/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('View/Home/include/header.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('View/Home/include/header', [], true)
+ 3 APPPATH\Controllers\SignupController.php(53): view('View/Home/include/header')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->try()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 04:57:06 --> Invalid file: "Homes/include/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Homes/include/header.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Homes/include/header', [], true)
+ 3 APPPATH\Controllers\SignupController.php(53): view('Homes/include/header')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->try()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 04:57:20 --> Invalid file: "Home/include/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home/include/home.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Home/include/home', [], true)
+ 3 APPPATH\Controllers\SignupController.php(53): view('Home/include/home')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->try()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 04:57:46 --> Invalid file: "Home/include/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home/include/home.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Home/include/home.php', [], true)
+ 3 APPPATH\Controllers\SignupController.php(53): view('Home/include/home.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->try()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 04:58:08 --> Invalid file: "Home/include/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home/include/home.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Home/include/home', [], true)
+ 3 APPPATH\Controllers\SignupController.php(53): view('Home/include/home')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->try()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 04:58:42 --> Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\SignupController.php(53): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->try()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 05:34:58 --> include(include/header): Failed to open stream: No such file or directory
+in APPPATH\Views\Home\home.php on line 38.
+ 1 APPPATH\Views\Home\home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include/header): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\E-BookMO\\app\\Views\\Home\\home.php', 38)
+ 2 APPPATH\Views\Home\home.php(38): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\E-BookMO\\app\\Views\\Home\\home.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Home\\home', [], true)
+ 6 APPPATH\Controllers\SignupController.php(53): view('Home\\home')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->try()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 05:35:02 --> include(include/header): Failed to open stream: No such file or directory
+in APPPATH\Views\Home\home.php on line 38.
+ 1 APPPATH\Views\Home\home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(include/header): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\E-BookMO\\app\\Views\\Home\\home.php', 38)
+ 2 APPPATH\Views\Home\home.php(38): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\E-BookMO\\app\\Views\\Home\\home.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Home\\home', [], true)
+ 6 APPPATH\Controllers\SignupController.php(53): view('Home\\home')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->try()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 13:14:01 --> syntax error, unexpected end of file
+in APPPATH\Config\Routes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 13:45:07 --> syntax error, unexpected variable "$routes"
+in APPPATH\Config\Routes.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 13:45:20 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\SignupController.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\E-BookMO\\app\\Controllers\\SignupController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SignupController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SignupController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\SignupController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+ERROR - 2023-11-01 13:55:56 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\E-BookMO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\E-BookMO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\E-BookMO\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\E-BookMO\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('rontaledankenet...', 'email', Array, NULL, 'email')
+#6 C:\laragon\www\E-BookMO\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'rontaledankenet...', Array, Array)
+#7 C:\laragon\www\E-BookMO\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\E-BookMO\app\Controllers\SignupController.php(34): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\E-BookMO\system\CodeIgniter.php(919): App\Controllers\SignupController->insert()
+#10 C:\laragon\www\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\E-BookMO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\E-BookMO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\laragon\www\E-BookMO\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\E-BookMO\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('rontaledankenet...', 'email', Array, NULL, 'email')
+#5 C:\laragon\www\E-BookMO\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'rontaledankenet...', Array, Array)
+#6 C:\laragon\www\E-BookMO\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#7 C:\laragon\www\E-BookMO\app\Controllers\SignupController.php(34): CodeIgniter\Controller->validate(Array)
+#8 C:\laragon\www\E-BookMO\system\CodeIgniter.php(919): App\Controllers\SignupController->insert()
+#9 C:\laragon\www\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#10 C:\laragon\www\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\E-BookMO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-11-01 13:55:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `usertbl`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('rontaledankeneth@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'rontaledankeneth@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\SignupController.php(34): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 15:27:19 --> syntax error, unexpected token "=", expecting "]"
+in APPPATH\Controllers\LoginController.php on line 35.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LoginController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LoginController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\LoginController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 15:51:11 --> Call to undefined method App\Models\UserModel::getAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\LoginController.php(25): CodeIgniter\Model->__call('getAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-01 15:54:08 --> Call to undefined method App\Models\UserModel::getAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\LoginController.php(25): CodeIgniter\Model->__call('getAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
