@@ -55,4 +55,8 @@ class LoginController extends BaseController
             return redirect()->to('/login');
         }
 }
+public function try()
+{
+    return view('UserLogin/Reservation');
+}
 }

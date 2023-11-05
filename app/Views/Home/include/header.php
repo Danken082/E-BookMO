@@ -1,3 +1,5 @@
+
+<?php include('login.php');?>
 <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section long_section px-0">
@@ -33,7 +35,7 @@
             </ul>
           </div>
           <div class="quote_btn-container">
-            <a href="">
+            <a href="" data-bs-toggle ="modal" data-bs-target ="#myModal">
               <span>
                 Login
               </span>
