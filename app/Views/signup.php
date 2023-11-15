@@ -13,7 +13,6 @@
 
   <title>4C's</title>
 
-
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="<?php base_url();?>css/bootstrap.css" />
 
@@ -64,7 +63,7 @@
 
             <!-- Login Link -->
             <p class="mb-2 pb-lg-2" style="color: #393f81;">Already have an account? <a href="/login"
-            style="color: #blue;">Login here</a></p>
+            style="color: blue">Login here</a></p>
             </form>
           </div>
         </div>
