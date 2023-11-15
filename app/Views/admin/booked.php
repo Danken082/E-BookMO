@@ -27,7 +27,7 @@
             <hr class="sidebar-divider my-0">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="/home">
+                <a class="nav-link" href="/admin/home">
                     <i class="fa-solid fa-house-user"></i>
                     <span>Home</span></a>
             </li>
