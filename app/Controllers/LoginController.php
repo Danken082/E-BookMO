@@ -13,7 +13,7 @@ class LoginController extends BaseController
     public function index()
     {
     helper(['form']);
-     echo view('user/login');
+     echo view('Home/include/login');
     }
     public function loginAuth()
     {
@@ -40,7 +40,7 @@ class LoginController extends BaseController
                     'isLoggedIn' => TRUE
                 ];
                 $session->set($ses_data);
-                return redirect()->to('/');
+                return redirect()->to('/view');
             }
             else
             {
@@ -57,6 +57,6 @@ class LoginController extends BaseController
 }
 public function try()
 {
-    return view('UserLogin/Reservation');
+    return view('dashboard/include/sidebar');
 }
 }

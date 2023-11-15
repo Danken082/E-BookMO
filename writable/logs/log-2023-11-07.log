@@ -1,0 +1,109 @@
+CRITICAL - 2023-11-07 15:02:06 --> syntax error, unexpected token "/"
+in APPPATH\Views\UserLogin\Reservation.php on line 49.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('UserLogin/Reservation', [], true)
+ 3 APPPATH\Controllers\LoginController.php(60): view('UserLogin/Reservation')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->try()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 15:02:13 --> Array to string conversion
+in APPPATH\Views\UserLogin\Reservation.php on line 48.
+ 1 APPPATH\Views\UserLogin\Reservation.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\E-BookMO\\app\\Views\\UserLogin\\Reservation.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\E-BookMO\\app\\Views\\UserLogin\\Reservation.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('UserLogin/Reservation', [], true)
+ 5 APPPATH\Controllers\LoginController.php(60): view('UserLogin/Reservation')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->try()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 15:02:18 --> Array to string conversion
+in APPPATH\Views\UserLogin\Reservation.php on line 48.
+ 1 APPPATH\Views\UserLogin\Reservation.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\E-BookMO\\app\\Views\\UserLogin\\Reservation.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\E-BookMO\\app\\Views\\UserLogin\\Reservation.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('UserLogin/Reservation', [], true)
+ 5 APPPATH\Controllers\LoginController.php(60): view('UserLogin/Reservation')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->try()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 15:02:26 --> Undefined variable $room
+in APPPATH\Views\UserLogin\Reservation.php on line 48.
+ 1 APPPATH\Views\UserLogin\Reservation.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $room', 'C:\\laragon\\www\\E-BookMO\\app\\Views\\UserLogin\\Reservation.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\E-BookMO\\app\\Views\\UserLogin\\Reservation.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('UserLogin/Reservation', [], true)
+ 5 APPPATH\Controllers\LoginController.php(60): view('UserLogin/Reservation')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->try()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 15:09:32 --> Invalid file: "UserLoginreservation.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('UserLoginreservation.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('UserLoginreservation', [], true)
+ 3 APPPATH\Controllers\RoomController.php(16): view('UserLoginreservation', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 15:10:00 --> Undefined array key ""
+in APPPATH\Views\UserLogin\Reservation.php on line 48.
+ 1 APPPATH\Views\UserLogin\Reservation.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\laragon\\www\\E-BookMO\\app\\Views\\UserLogin\\Reservation.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\E-BookMO\\app\\Views\\UserLogin\\Reservation.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('UserLogin/reservation', [], true)
+ 5 APPPATH\Controllers\RoomController.php(16): view('UserLogin/reservation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 15:10:21 --> Undefined array key "roomNo"
+in APPPATH\Views\UserLogin\Reservation.php on line 48.
+ 1 APPPATH\Views\UserLogin\Reservation.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "roomNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Views\\UserLogin\\Reservation.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\E-BookMO\\app\\Views\\UserLogin\\Reservation.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('UserLogin/reservation', [], true)
+ 5 APPPATH\Controllers\RoomController.php(16): view('UserLogin/reservation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 15:11:35 --> syntax error, unexpected token "as", expecting ";"
+in APPPATH\Views\UserLogin\Reservation.php on line 44.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('UserLogin/reservation', [], true)
+ 3 APPPATH\Controllers\RoomController.php(16): view('UserLogin/reservation', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 15:11:45 --> syntax error, unexpected identifier "in", expecting ";"
+in APPPATH\Views\UserLogin\Reservation.php on line 44.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('UserLogin/reservation', [], true)
+ 3 APPPATH\Controllers\RoomController.php(16): view('UserLogin/reservation', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 15:14:06 --> syntax error, unexpected identifier "in"
+in APPPATH\Views\UserLogin\Reservation.php on line 44.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('UserLogin/reservation', [], true)
+ 3 APPPATH\Controllers\RoomController.php(16): view('UserLogin/reservation', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 15:14:16 --> syntax error, unexpected end of file
+in APPPATH\Views\UserLogin\Reservation.php on line 75.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('UserLogin/reservation', [], true)
+ 3 APPPATH\Controllers\RoomController.php(16): view('UserLogin/reservation', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

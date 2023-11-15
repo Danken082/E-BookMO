@@ -8,12 +8,12 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <link rel="icon" href="<?php base_url();?>images/bg.png" type="image/gif" />
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Edgecut</title>
+  <title>4C's</title>
 
 
   <!-- bootstrap core css -->
@@ -41,23 +41,27 @@
         <div class="col-md-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/f1.png" alt="">
+              <?php foreach($room as $room):?>
+              <img src="<?php base_url();?>images/<?=$room['file'];?>" alt="">
             </div>
             <div class="detail-box">
               <h5>
-                brown Chair Design
+               Room <?= $room['roomNo']?>
               </h5>
               <div class="price_box">
                 <h6 class="price_heading">
-                  <span>$</span> 100.00
+                  <span>P</span><?= $room['Price']?>
                 </h6>
+                <?php endforeach;?>
                 <a href="">
-                  Buy Now
-                </a>
+                View
+              </a>
+               
               </div>
             </div>
+             
           </div>
-        </div>
+        </div>                                    
         
         </div>
       </div>

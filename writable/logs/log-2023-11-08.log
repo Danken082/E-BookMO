@@ -1,0 +1,21 @@
+CRITICAL - 2023-11-08 01:56:16 --> include(heade.php): Failed to open stream: No such file or directory
+in APPPATH\Views\dashboard\include\sidebar.php on line 2.
+ 1 APPPATH\Views\dashboard\include\sidebar.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(heade.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\E-BookMO\\app\\Views\\dashboard\\include\\sidebar.php', 2)
+ 2 APPPATH\Views\dashboard\include\sidebar.php(2): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\E-BookMO\\app\\Views\\dashboard\\include\\sidebar.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/include/sidebar', [], true)
+ 6 APPPATH\Controllers\LoginController.php(60): view('dashboard/include/sidebar')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->try()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-08 03:47:50 --> Invalid file: "user/login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/login.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('user/login', [], true)
+ 3 APPPATH\Controllers\LoginController.php(16): view('user/login')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

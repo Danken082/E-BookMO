@@ -24,7 +24,7 @@ class SignupController extends BaseController
         $validation = [
             'LastName' => 'required|min_length[2]|max_length[50]',
             'FirstName' => 'required|min_length[2]|max_length[50]',
-            'ContactNo' => 'required|numeric|min_length[11]|max_length[14]',
+            'ContactNo' => 'required|min_length[11]|max_length[14]',
             'username' => 'required|min_length[5]|max_length[50]',
             'email' => 'required|min_length[5]|max_length[50]|valid_email|is_unique[usertbl.email]',
             'password' => 'required|min_length[5]|max_length[50]',
@@ -43,7 +43,7 @@ class SignupController extends BaseController
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
             ];
             $this->user->save($data);
-            return redirect()->to('/');
+            return redirect()->to('/login');
         }
         else{
             $data['validation'] = $this->validator;

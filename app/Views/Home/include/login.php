@@ -30,22 +30,6 @@
 
 </head>
 <body>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-<div class="modal" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-         
-          <div class="modal-header">
-            <h4 class="modal-title">Signin</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-         
-          <div class="modal-body">
           <section class="contact_section  long_section">
       <div class="container">
         <div class="row">
@@ -75,10 +59,6 @@
           </div>
 
           <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          </div>
-
         </div>
       </div>
     </div>

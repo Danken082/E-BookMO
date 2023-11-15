@@ -14,5 +14,5 @@ $routes->get('book', 'ViewController::book');
 $routes->match(['get','post'], 'SignupController/Insert', 'SignupController::insert');
 $routes->match(['get','post'], 'LoginController/login', 'LoginController::loginAuth');
 $routes->get('login', 'LoginController::index');
+$routes->get('view', 'RoomController::Index');
 $routes->get('try', 'LoginController::try');
-
