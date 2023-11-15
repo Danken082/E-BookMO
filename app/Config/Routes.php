@@ -16,7 +16,7 @@ $routes->match(['get','post'], 'LoginController/login', 'LoginController::loginA
 $routes->get('login', 'LoginController::index');
 $routes->get('try', 'LoginController::try');
 $routes->get('/login', 'AdminController::login');
-$routes->get('/admin/home', 'AdminViewController::home');
+$routes->get('/home', 'AdminViewController::home');
 $routes->get('/dash', 'AdminViewController::dashboard');
 $routes->get('/booked', 'AdminViewController::booking');
 $routes->get('/check_in', 'AdminViewController::check_in');
