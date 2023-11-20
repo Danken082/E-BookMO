@@ -41,10 +41,10 @@
 						                <table class="table table-bordered">
 							                <thead>
 								                <th>#</th>
-								                <th>Category</th>
-								                <th>Reference</th>
-								                <th>Status</th>
-								                <th>Action</th>
+								                <th>CATEGORIES</th>
+								                <th>REFERENCE</th>
+								                <th>STATUS</th>
+								                <th>ACTION</th>
 							                </thead>
 							                <tbody>
 								                <?php 
