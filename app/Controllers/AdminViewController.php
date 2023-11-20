@@ -8,7 +8,7 @@ class AdminViewController extends BaseController
 {
     public function home()
     {
-        return view('/admin/home');
+        return view('admin/home');
     }
 
     public function dashboard()

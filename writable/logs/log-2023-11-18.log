@@ -1,0 +1,24 @@
+CRITICAL - 2023-11-18 05:07:56 --> Undefined variable $conn
+in APPPATH\Views\admin\booked.php on line 38.
+ 1 APPPATH\Views\admin\booked.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conn', 'C:\\laragon\\www\\E-BookMO\\app\\Views\\admin\\booked.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\E-BookMO\\app\\Views\\admin\\booked.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/booked', [], true)
+ 5 APPPATH\Controllers\AdminViewController.php(21): view('admin/booked')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminViewController->booking()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminViewController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-11-18 05:44:16 --> Undefined variable $conn
+in APPPATH\Views\admin\booked.php on line 38.
+ 1 APPPATH\Views\admin\booked.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conn', 'C:\\laragon\\www\\E-BookMO\\app\\Views\\admin\\booked.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\E-BookMO\\app\\Views\\admin\\booked.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/booked', [], true)
+ 5 APPPATH\Controllers\AdminViewController.php(21): view('admin/booked')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminViewController->booking()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminViewController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
