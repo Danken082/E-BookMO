@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Controllers;
-use App\Controllers\BaseController;
-use CodeIgniter\RestFul\ResourceController;
-use CodeIgniter\API\ResponseTrait;
 
-class SignupController extends ResourceController
+use App\Controllers\BaseController;
+
+class SignupController extends BaseController
 {
     public function __construct()
     {
@@ -34,18 +33,17 @@ class SignupController extends ResourceController
 
         if($this->validate($validation))
         {
-            $json = $this->request->getJson();
             $data= 
             [
-                'LastName' => $json->LastName,
-                'FirstName' => $json->FirstName,
-                'ContactNo' => $json->ContactNo,
-                'username' => $json->username,
-                'email' => $json->email,
-                'password' => password_hash($json->password, PASSWORD_DEFAULT),
+                'LastName' => $this->request->getVar('LastName'),
+                'FirstName' => $this->request->getVar('FirstName'),
+                'ContactNo' => $this->request->getVar('ContactNo'),
+                'username' => $this->request->getVar('username'),
+                'email' => $this->request->getVar('email'),
+                'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
             ];
-            $save = $this->user->save($data);
-            return $this->respond($save, 400);
+            $this->user->save($data);
+            return redirect()->to('/login');
         }
         else{
             $data['validation'] = $this->validator;

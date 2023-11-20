@@ -1,9 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('include/header.php')?>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>4C's HOME</title>
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+</head>
 <body id="page-top">
     <!-- Page Wrapper -->
-    <?php include('include/sidebar.php')?>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-text mx-3">4C's Transient and Apartment</div>
+            </a>
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="/home">
+                    <i class="fa-solid fa-house-user"></i>
+                    <span>Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/dash">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/booked">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Booked</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/check_in">
+                    <i class="fa-solid fa-building-circle-check"></i>
+                    <span>Check In</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/check_out">
+                    <i class="fa-solid fa-building-circle-check"></i>
+                    <span>Check Out</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/rooms">
+                    <i class="fa-solid fa-bed"></i>
+                    <span>Rooms</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/room_categ">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Room Category List</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/users">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Users</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/site_set">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Site Settings</span>
+                </a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+        </ul>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -17,75 +94,6 @@
                         <h1 class="h3 mb-0 text-gray-800">Users</h1>
                 </nav>
                 <!-- End of Topbar -->
-
-                <div class="container-fluid">
-	                <div class="row">
-	                    <div class="col-lg-12">
-			                <button class="btn btn-primary float-right btn-sm" id="new_user"><i class="fa fa-plus"></i> New user</button>
-	                    </div>
-	                </div>
-	                <br>
-	                <div class="row">
-		                <div class="card col-lg-12">
-			                <div class="card-body">
-				                <table class="table-striped table-bordered col-md-12">
-			                        <thead>
-				                        <tr>
-					                        <th class="text-center">#</th>
-                                            <th class="text-center">Name</th>
-                                            <th class="text-center">Username</th>
-                                            <th class="text-center">Action</th>
-				                        </tr>
-			                        </thead>
-			                        <tbody>
-				                        <?php include 'db_connect.php';
- 					                        $users = $conn->query("SELECT * FROM users order by name asc");
- 					                        $i = 1;
- 					                        while($row= $users->fetch_assoc()):
-				                        ?>
-				                        <tr>
-				 	                        <td>
-				 		                        <?php echo $i++ ?>
-				 	                        </td>
-				 	                        <td>
-				 		                        <?php echo $row['name'] ?>
-				 	                        </td>
-				 	                        <td>
-				 		                        <?php echo $row['username'] ?>
-				 	                        </td>
-				 	                        <td>
-				 		                        <center>
-								                    <div class="btn-group">
-								                        <button type="button" class="btn btn-primary">Action</button>
-								                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								                            <span class="sr-only">Toggle Dropdown</span>
-								                        </button>
-								                        <div class="dropdown-menu">
-								                            <a class="dropdown-item edit_user" href="javascript:void(0)" data-id = '<?php echo $row['id'] ?>'>Edit</a>
-								                            <div class="dropdown-divider"></div>
-								                            <a class="dropdown-item delete_user" href="javascript:void(0)" data-id = '<?php echo $row['id'] ?>'>Delete</a>
-								                        </div>
-								                    </div>
-						                        </center>
-				 	                        </td>
-				                        </tr>
-				                        <?php endwhile; ?>
-			                        </tbody>
-		                        </table>
-			                </div>
-		                </div>
-	                </div>
-                </div>
-<script>
-	
-$('#new_user').click(function(){
-	uni_modal('New User','manage_user.php')
-})
-$('.edit_user').click(function(){
-	uni_modal('Edit User','manage_user.php?id='+$(this).attr('data-id'))
-})
-
-</script>
                 
 </body>
 </html>

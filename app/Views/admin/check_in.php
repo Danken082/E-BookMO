@@ -1,9 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('include/header.php')?>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>4C's HOME</title>
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+</head>
 <body id="page-top">
     <!-- Page Wrapper -->
-    <?php include('include/sidebar.php')?>    <!-- End of Sidebar -->
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-text mx-3">4C's Transient and Apartment</div>
+            </a>
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="/home">
+                    <i class="fa-solid fa-house-user"></i>
+                    <span>Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/dash">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/booked">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Booked</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/check_in">
+                    <i class="fa-solid fa-building-circle-check"></i>
+                    <span>Check In</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/check_out">
+                    <i class="fa-solid fa-building-circle-check"></i>
+                    <span>Check Out</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/rooms">
+                    <i class="fa-solid fa-bed"></i>
+                    <span>Rooms</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/room_categ">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Room Category List</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/users">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Users</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/site_set">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Site Settings</span>
+                </a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+        </ul>
+        <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -16,104 +94,6 @@
                         <h1 class="h3 mb-0 text-gray-800">Check In</h1>
                 </nav>
                 <!-- End of Topbar -->
-
-                <?php include('db_connect.php'); ?>
-<div class="container-fluid">
-	<div class="col-lg-12">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="card">
-					<div class="card-body">
-						<div class="container-fluid">
-							<div class="col-md-12">
-								<form id="filter">
-									<div class="row">
-										<div class=" col-md-4">
-											<label class="control-label">Category</label>
-											<select class="custom-select browser-default" name="category_id">
-												<option value="all" <?php echo isset($_GET['category_id']) && $_GET['category_id'] == 'all' ? 'selected' : '' ?>>All</option>
-												<?php 
-												$cat = $conn->query("SELECT * FROM room_categories order by name asc ");
-												while($row= $cat->fetch_assoc()) {
-													$cat_name[$row['id']] = $row['name'];
-													?>
-													<option value="<?php echo $row['id'] ?>" <?php echo isset($_GET['category_id']) && $_GET['category_id'] == $row['id'] ? 'selected' : '' ?>><?php echo $row['name'] ?></option>
-												<?php
-												}
-												?>
-											</select>
-										</div> 
-										<div class="col-md-2">
-											<label for="" class="control-label">&nbsp</label>
-											<button class="btn btn-block btn-primary">Filter</button>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row mt-3">
-			<div class="col-md-12">
-				<div class="card">
-					<div class="card-body">
-						<table class="table table-bordered">
-							<thead>
-								<th>#</th>
-								<th>Category</th>
-								<th>Room</th>
-								<th>Status</th>
-								<th>Action</th>
-							</thead>
-							<tbody>
-								<?php 
-								$i = 1;
-								$where = '';
-								if(isset($_GET['category_id']) && !empty($_GET['category_id'])  && $_GET['category_id'] != 'all'){
-									$where .= " where category_id = '".$_GET['category_id']."' ";
-								}
-									if(empty($where))
-										$where .= " where status = '0' ";
-									else
-										$where .= " and status = '0' ";
-								$rooms = $conn->query("SELECT * FROM rooms ".$where." order by id asc");
-								while($row=$rooms->fetch_assoc()):
-								?>
-								<tr>
-									<td class="text-center"><?php echo $i++ ?></td>
-									<td class="text-center"><?php echo $cat_name[$row['category_id']] ?></td>
-									<td class=""><?php echo $row['room'] ?></td>
-									<?php if($row['status'] == 0): ?>
-										<td class="text-center"><span class="badge badge-success">Available</span></td>
-									<?php else: ?>
-										<td class="text-center"><span class="badge badge-default">Unavailable</span></td>
-									<?php endif; ?>
-									<td class="text-center">
-											<button class="btn btn-sm btn-primary check_in" type="button" data-id="<?php echo $row['id'] ?>">Check-in</button>
-									</td>
-								</tr>
-							<?php endwhile; ?>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<script>
-	$('table').dataTable()
-	$('.check_in').click(function(){
-		uni_modal("Check In","manage_check_in.php?rid="+$(this).attr("data-id"))
-	})
-	$('#filter').submit(function(e){
-		e.preventDefault()
-		location.replace('index.php?page=check_in&category_id='+$(this).find('[name="category_id"]').val()+'&status='+$(this).find('[name="status"]').val())
-	})
-</script>
                 
 </body>
 </html>

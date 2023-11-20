@@ -1,9 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('include/header.php')?>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>4C's HOME</title>
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+</head>
 <body id="page-top">
     <!-- Page Wrapper -->
-    <?php include('include/sidebar.php')?>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-text mx-3">4C's Transient and Apartment</div>
+            </a>
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="/home">
+                    <i class="fa-solid fa-house-user"></i>
+                    <span>Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/dash">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/booked">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Booked</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/check_in">
+                    <i class="fa-solid fa-building-circle-check"></i>
+                    <span>Check In</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/check_out">
+                    <i class="fa-solid fa-building-circle-check"></i>
+                    <span>Check Out</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/rooms">
+                    <i class="fa-solid fa-bed"></i>
+                    <span>Rooms</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/room_categ">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Room Category List</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/users">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Users</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/site_set">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Site Settings</span>
+                </a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+        </ul>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -17,98 +94,6 @@
                         <h1 class="h3 mb-0 text-gray-800">Site Settings</h1>
                 </nav>
                 <!-- End of Topbar -->
-
-                <?php include 'db_connect.php';
-                    $qry = $conn->query("SELECT * from system_settings limit 1");
-                    if($qry->num_rows > 0)
-                    {
-	                    foreach($qry->fetch_array() as $k => $val)
-                        {
-		                    $meta[$k] = $val;
-	                    }
-                    }
-                ?>
-
-                <div class="container-fluid">
-                    <div class="card col-lg-12">
-		                <div class="card-body">
-			                <form action="" id="manage-settings">
-				                <div class="form-group">
-					                <label for="name" class="control-label">Transient and Apartment Name</label>
-					                <input type="text" class="form-control" id="name" name="name" value="<?php echo isset($meta['hotel_name']) ? $meta['hotel_name'] : '' ?>" required>
-				                </div>
-				                <div class="form-group">
-					                <label for="email" class="control-label">Transient and Apartment Email</label>
-					                <input type="email" class="form-control" id="email" name="email" value="<?php echo isset($meta['email']) ? $meta['email'] : '' ?>" required>
-				                </div>
-				                <div class="form-group">
-					                <label for="contact" class="control-label">Transient and Apartment Contact</label>
-					                <input type="text" class="form-control" id="contact" name="contact" value="<?php echo isset($meta['contact']) ? $meta['contact'] : '' ?>" required>
-				                </div>
-				                <div class="form-group">
-					                <label for="about" class="control-label">Transient and Apartment About Content</label>
-					                <textarea name="about" class="text-jqte"><?php echo isset($meta['about_content']) ? $meta['about_content'] : '' ?></textarea>
-				                </div>
-				                <div class="form-group">
-					                <label for="" class="control-label">Image</label>
-					                <input type="file" class="form-control" name="img" onchange="displayImg(this,$(this))">
-				                </div>
-				                <div class="form-group">
-					                <img src="<?php echo isset($meta['cover_img']) ? '../assets/img/'.$meta['cover_img'] :'' ?>" alt="" id="cimg">
-				                </div>
-				                <center>
-					                <button class="btn btn-info btn-primary btn-block col-md-2">Save</button>
-				                </center>
-			                </form>
-		                </div>
-	                </div>
-                </div>
-	        <style>
-	            img#cimg
-                {
-		            max-height: 10vh;
-		            max-width: 6vw;
-	            }
-            </style>
-
-<script>
-	function displayImg(input,_this) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-        	$('#cimg').attr('src', e.target.result);
-        }
-
-        reader.readAsDataURL(input.files[0]);
-    }
-}
-	$('.text-jqte').jqte();
-
-	$('#manage-settings').submit(function(e){
-		e.preventDefault()
-		start_load()
-		$.ajax({
-			url:'ajax.php?action=save_settings',
-			data: new FormData($(this)[0]),
-		    cache: false,
-		    contentType: false,
-		    processData: false,
-		    method: 'POST',
-		    type: 'POST',
-			error:err=>{
-				console.log(err)
-			},
-			success:function(resp){
-				if(resp == 1){
-					alert_toast('Data successfully saved.','success')
-					setTimeout(function(){
-						location.reload()
-					},1000)
-				}
-			}
-		})
-
-	})
-</script>       
+                
 </body>
 </html>
