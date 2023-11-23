@@ -32,10 +32,6 @@
 </head>
 
 <body>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
   <div class="hero_area">
     <!-- header section strats -->
     <?php include('include/header.php');?>
@@ -165,11 +161,11 @@
   </div>
 
   <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
-  <!-- custom js -->
-  <script src="js/custom.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
 
   
 </body>
