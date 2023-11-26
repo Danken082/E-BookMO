@@ -1,6 +1,5 @@
 <template>
-    
-      <div id="wrapper">
+    <div id="wrapper">
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
             <!-- Sidebar - Brand -->
@@ -13,7 +12,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/home">
                     <i class="fa-solid fa-house-user"></i>
-                    <span>Homer</span></a>
+                    <span>Home</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/dash">
@@ -66,5 +65,5 @@
             <hr class="sidebar-divider d-none d-md-block">
         </ul>
         <!-- End of Sidebar -->
-</div>
+    </div>
 </template>
