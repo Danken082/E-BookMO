@@ -1,46 +1,99 @@
 <template>
   <headers/>  
-<section class="contact_section  long_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container">
-            <div class="heading_container">
-              <h2>
-                Signup
-              </h2>
-            </div>
-            <form action="" method = "post">
-              <div>
-                <input type="text" name="LastName" placeholder="Last Name" required/>
-              </div>
-              <div>
-                <input type="text" name="FirstName" placeholder="First Name" required/>
-              </div>
-              <div>
-                <input type="text" name="ContactNo" placeholder="Contact Number" required/>
-              </div>
-              <div>
-                <input type="text" name="username" placeholder="Username" required/>
-              </div>
-              <div>
-                <input type="text" name="email" placeholder="Email" required/>
-              </div>
-              <div>
-                <input type="password" name="password" placeholder="Password" required/>
-              </div>
-              <button type ='submit'>Signup</button>
-              <a class="small text-muted" href="#!">Forgot password?</a>
+  <section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="/assets/4C.png" alt="4C Image" 
+          class="img-fluid">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        
+        <form>
 
-            <!-- Login Link -->
-            <p class="mb-2 pb-lg-2" style="color: #393f81;">Already have an account? <a href="/login"
-            style="color: blue">Login here</a></p>
-            </form>
+          <div class="divider d-flex align-items-center my-4">
+            <h3 class="text-center fw-bold mx-3 mb-0" style="color: #FD8D14; font-family: 'Lucida Sans';" >Register Here</h3>
           </div>
-        </div>
-</div>
-</div>
-</section>
+
+          <!-- LastName input chuchu -->
+          <div class="form-outline mb-3">
+            <input type="lastname" id="form3Example3" class="form-control form-control-lg "
+              placeholder ="Last Name" style="height: 35px; "/>
+            <label class="form-label" for="form3Example3" style="color: rgb(65, 62, 62);" >Last Name</label>
+          </div>
+
+          <!-- FirstName input -->
+          <div class="form-outline mb-3">
+            <input type="firstname" id="form3Example4" class="form-control form-control-lg"
+              placeholder="First Name" style="height: 35px;"/>
+            <label class="form-label" for="form3Example3" style="color: rgb(65, 62, 62);">First Name</label>
+          </div>
+
+           <!-- ContactNumber input -->
+           <div class="form-outline mb-3">
+            <input type="contactnumber" id="form3Example4" class="form-control form-control-lg"
+              placeholder="Contact Number" style="height: 35px;"/>
+            <label class="form-label" for="form3Example4" style="color: rgb(65, 62, 62);">Contact Number</label>
+          </div>
+
+           <!-- Username input -->
+           <div class="form-outline mb-3">
+            <input type="username" id="form3Example4" class="form-control form-control-lg"
+              placeholder="Username" style="height: 35px;"/>
+            <label class="form-label" for="form3Example4" style="color:  rgb(65, 62, 62);">Username</label>
+          </div>
+
+           <!-- Email input -->
+           <div class="form-outline mb-3">
+            <input type="email" id="form3Example4" class="form-control form-control-lg"
+              placeholder="Enter your email"  style="height: 35px;" />
+            <label class="form-label" for="form3Example4" style="color: rgb(65, 62, 62);">Email</label>
+          </div>
+           <!-- Password input -->
+           <div class="form-outline mb-3">
+            <input type="password" id="form3Example4" class="form-control form-control-lg"
+              placeholder="Enter password" style="height: 35px;" />
+            <label class="form-label" for="form3Example4" style="color: rgb(65, 62, 62);">Password</label>
+          </div>
+
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button type="button" class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Register</button>
+            <p class="small fw-bold mt-2 pt-1 mb-0" style="color: black;">Already have an account? <a href="/Login"
+                class="link-danger">Login</a></p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div  
+    class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 " style="background-color: #C51605;">
+    <div class="text-white mb-3 mb-md-0" ></div>
+
+    <div>
+      <a href="#!" class="text-white me-4">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#!" class="text-white me-4">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#!" class="text-white me-4">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="#!" class="text-white">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </div>
+
+
+</section> 
 
 </template>
 
@@ -51,4 +104,39 @@ import headers from '@/components/admin/include/header.vue'
       headers
     }
   }
-</script>
+  </script>
+
+
+
+  <style scoped>
+
+  input.form-control {
+    font-size: 13px; 
+    color: #333; 
+    border: 1px solid grey; 
+ 
+  }
+   /*.container-fluid {
+  border: 1px solid black; 
+  border-radius: 10px;
+  padding: 20px;
+  background-color: yellowgreen;
+  }*/
+  
+  /* For Registration buttonnn */
+  button.btn-primary {
+    font-size: 18px; 
+    color: rgb(45, 41, 41); 
+    background-color:  #FFE17B; 
+    border: 1px solid #FFE17B;
+   
+  }
+
+button.btn-primary:hover {
+  background-color: #FD8D14;
+  color: white;
+  border: 1px solid #FD8D14; 
+}
+
+
+  </style>
