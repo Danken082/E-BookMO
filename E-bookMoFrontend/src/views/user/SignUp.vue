@@ -9,3 +9,4 @@ import SignUp from '@/components/user/SignUp.vue'
         }
     }
 </script>
+
