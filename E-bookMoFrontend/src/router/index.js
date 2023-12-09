@@ -17,6 +17,12 @@ const routes = [
     name: 'home',
     component: ()=> import(/*webpackChunkName: "finance"*/ '../views/admin/home.vue')
   },
+  
+  {
+    path:'/try',
+    name: 'try',
+    component: ()=> import(/*webpackChunkName: "finance"*/ '../views/a/try.vue')
+  },
   {
     path:'/home',
     name: 'homeadmin',

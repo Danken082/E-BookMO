@@ -1,0 +1,144 @@
+CRITICAL - 2023-12-09 03:16:30 --> Attempt to read property "roomNo" on null
+in APPPATH\Controllers\RoomController.php on line 31.
+ 1 APPPATH\Controllers\RoomController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "roomNo" on null', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 03:20:02 --> Attempt to read property "roomNo" on null
+in APPPATH\Controllers\RoomController.php on line 31.
+ 1 APPPATH\Controllers\RoomController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "roomNo" on null', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 03:26:49 --> Attempt to read property "roomNo" on null
+in APPPATH\Controllers\RoomController.php on line 31.
+ 1 APPPATH\Controllers\RoomController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "roomNo" on null', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 03:27:37 --> Attempt to read property "roomNo" on null
+in APPPATH\Controllers\RoomController.php on line 31.
+ 1 APPPATH\Controllers\RoomController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "roomNo" on null', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 03:31:08 --> Undefined property: stdClass::$MaxPeson
+in APPPATH\Controllers\RoomController.php on line 35.
+ 1 APPPATH\Controllers\RoomController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$MaxPeson', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 03:33:45 --> Undefined property: stdClass::$MaxPeson
+in APPPATH\Controllers\RoomController.php on line 35.
+ 1 APPPATH\Controllers\RoomController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$MaxPeson', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 04:03:03 --> Undefined property: stdClass::$roomNo
+in APPPATH\Controllers\RoomController.php on line 37.
+ 1 APPPATH\Controllers\RoomController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$roomNo', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 05:24:58 --> Undefined property: stdClass::$MaxPeson
+in APPPATH\Controllers\RoomController.php on line 41.
+ 1 APPPATH\Controllers\RoomController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$MaxPeson', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 05:31:21 --> Undefined property: stdClass::$MaxPeson
+in APPPATH\Controllers\RoomController.php on line 41.
+ 1 APPPATH\Controllers\RoomController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$MaxPeson', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 05:32:36 --> Undefined property: stdClass::$MaxPeson
+in APPPATH\Controllers\RoomController.php on line 41.
+ 1 APPPATH\Controllers\RoomController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$MaxPeson', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 05:35:01 --> Undefined property: stdClass::$MaxPeson
+in APPPATH\Controllers\RoomController.php on line 40.
+ 1 APPPATH\Controllers\RoomController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$MaxPeson', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 05:41:15 --> Attempt to read property "roomNo" on null
+in APPPATH\Controllers\RoomController.php on line 37.
+ 1 APPPATH\Controllers\RoomController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "roomNo" on null', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 06:22:43 --> Attempt to read property "roomNo" on null
+in APPPATH\Controllers\RoomController.php on line 37.
+ 1 APPPATH\Controllers\RoomController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "roomNo" on null', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 06:24:02 --> Attempt to read property "roomNo" on null
+in APPPATH\Controllers\RoomController.php on line 37.
+ 1 APPPATH\Controllers\RoomController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "roomNo" on null', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 06:24:03 --> Attempt to read property "roomNo" on null
+in APPPATH\Controllers\RoomController.php on line 37.
+ 1 APPPATH\Controllers\RoomController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "roomNo" on null', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 06:24:03 --> Attempt to read property "roomNo" on null
+in APPPATH\Controllers\RoomController.php on line 37.
+ 1 APPPATH\Controllers\RoomController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "roomNo" on null', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 06:24:03 --> Attempt to read property "roomNo" on null
+in APPPATH\Controllers\RoomController.php on line 37.
+ 1 APPPATH\Controllers\RoomController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "roomNo" on null', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-09 06:24:04 --> Attempt to read property "roomNo" on null
+in APPPATH\Controllers\RoomController.php on line 37.
+ 1 APPPATH\Controllers\RoomController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "roomNo" on null', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\RoomController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RoomController->insertRoom()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')

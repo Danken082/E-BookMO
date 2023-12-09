@@ -18,6 +18,9 @@ $routes->get('view', 'RoomController::Index');
 $routes->get('try', 'LoginController::try');
 $routes->get('home', 'DashboardController::home');
 $routes->get('chart-view', 'DashboardController::Chart');
-$routes->group('admin', function($routes){
-               $routes->post('save', 'RoomController::insertRoom');
+
+$routes->group('admin', static function($routes){
+               $routes->get('save', 'RoomController::insertRoom');
+               $routes->post('try', 'RoomController::try');
+               
 });//Inserting Data to database
