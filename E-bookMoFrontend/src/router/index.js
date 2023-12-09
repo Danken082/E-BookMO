@@ -7,6 +7,12 @@ const routes = [
     component: SignUp
   },
   {
+    path:'/insert',
+    name: 'insert',
+    component: ()=> import(/*webpackChunkName: "finance"*/ '../views/dashboard/insert.vue')
+  },
+
+  {
     path:'/',
     name: 'home',
     component: ()=> import(/*webpackChunkName: "finance"*/ '../views/admin/home.vue')
@@ -21,6 +27,12 @@ const routes = [
     name: 'about',
     component: ()=> import(/*webpackChunkName: "finance"*/ '../views/admin/about.vue')
   },
+  {
+    path:'/chart',
+    name: 'chart',
+    component: ()=> import(/*webpackChunkName: "finance"*/ '../views/dashboard/visualization/chart.vue')
+  },
+  
   {
     path:'/contact',
     name: 'contactus',

@@ -68,6 +68,7 @@ $app->initialize();
 $context = is_cli() ? 'php-cli' : 'web';
 $app->setContext($context);
 
+
 /*
  *---------------------------------------------------------------
  * LAUNCH THE APPLICATION
@@ -75,6 +76,16 @@ $app->setContext($context);
  * Now that everything is set up, it's time to actually fire
  * up the engines and make this app do its thang.
  */
+//Applying CORS
+header('Access-Control-Allow-Origin: *');
+ header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+ header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+ $method = $_SERVER['REQUEST_METHOD'];
+ if($method == "OPTIONS") {
+ die();
+ }
+
+
 
 $app->run();
 

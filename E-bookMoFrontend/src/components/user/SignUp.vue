@@ -102,6 +102,11 @@ import headers from '@/components/admin/include/header.vue'
   export default{
     components:{
       headers
+    },
+    data(){
+      return{
+        
+      }
     }
   }
   </script>

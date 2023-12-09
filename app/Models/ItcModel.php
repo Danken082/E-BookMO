@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class RoomModel extends Model
+class ItcModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'room';
-    protected $primaryKey       = 'roomID';
+    protected $table            = 'trytbl';
+    protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['RoomNo', 'RoomType', 'Price', 'file','MaxPerson', 'Status'];
+    protected $allowedFields    = ['name', 'username'];
 
     // Dates
     protected $useTimestamps = false;

@@ -16,3 +16,8 @@ $routes->match(['get','post'], 'LoginController/login', 'LoginController::loginA
 $routes->get('login', 'LoginController::index');
 $routes->get('view', 'RoomController::Index');
 $routes->get('try', 'LoginController::try');
+$routes->get('home', 'DashboardController::home');
+$routes->get('chart-view', 'DashboardController::Chart');
+$routes->group('admin', function($routes){
+               $routes->post('save', 'RoomController::insertRoom');
+});//Inserting Data to database

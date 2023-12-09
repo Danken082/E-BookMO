@@ -50,7 +50,7 @@ class Database extends Config
      * running PHPUnit database tests.
      */
     public array $tests = [
-        'DSN'         => '',
+        'DSN'          => '',
         'hostname'    => '127.0.0.1',
         'username'    => '',
         'password'    => '',
