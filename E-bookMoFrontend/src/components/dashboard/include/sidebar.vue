@@ -25,13 +25,13 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="checkin">
+                <a class="nav-link collapsed" href="check_in">
                     <i class="fa-solid fa-building-circle-check"></i>
                     <span>Check In</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="checkout">
+                <a class="nav-link collapsed" href="check_out">
                     <i class="fa-solid fa-building-circle-check"></i>
                     <span>Check Out</span>
                 </a>
@@ -52,12 +52,6 @@
                 <a class="nav-link collapsed" href="users">
                     <i class="fa-solid fa-users"></i>
                     <span>Users</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="site_set">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Site Settings</span>
                 </a>
             </li>
             <!-- Divider -->
