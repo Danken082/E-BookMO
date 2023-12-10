@@ -16,13 +16,13 @@
           <!-- LastName input chuchu -->
           <div class="form-outline mb-3">
             <label class="form-label" for="form3Example3" style="color: rgb(65, 62, 62);" >Last Name</label>
-            <input type="lastname" id="form3Example3" class="form-control form-control-lg " placeholder ="Enter your lastname" style="height: 35px; "/>
+            <input type="lastname" id="form3Example3" class="form-control form-control-lg " placeholder ="Enter your last name" style="height: 35px; "/>
           </div>
 
           <!-- FirstName input -->
           <div class="form-outline mb-3">
             <label class="form-label" for="form3Example3" style="color: rgb(65, 62, 62);">First Name</label>
-            <input type="firstname" id="form3Example4" class="form-control form-control-lg" placeholder="Enter your firstname" style="height: 35px;"/>
+            <input type="firstname" id="form3Example4" class="form-control form-control-lg" placeholder="Enter your first name" style="height: 35px;"/>
           </div>
 
            <!-- ContactNumber input -->

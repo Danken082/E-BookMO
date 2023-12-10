@@ -59,7 +59,7 @@
  
            <div class="text-center text-lg-start mt-4 pt-2">
              <button type="button" class="btn btn-primary btn-lg custom-button">Login</button>
-             <p class="small fw-bold mt-2 pt-1 mb-0" style="color: black">Don't have an account? <a href="/SignUp"
+             <p class="small fw-bold mt-2 pt-1 mb-0" style="color: black">Don't have an account yet?<a href="/SignUp"
                  class="link-danger">Register</a></p>
            </div>
  

@@ -4,9 +4,7 @@
   <header  class="header_section long_section px-0">
     <nav class="navbar navbar-expand-lg custom_nav-container ">
       <a class="navbar-brand" href="">
-        <span>
-         4C's
-        </span>
+        <div class="img-box"><img src="images/4Clogo.jpg" alt="4C"></div>
       </a>
     
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +58,6 @@
 
 </template>
 
-
 <style scoped>
 .navbar-nav .nav-item a:hover {
 color: #FD8D14;
@@ -100,7 +97,4 @@ border-color:  #FFE17B; /* Set hover border color */
 border-color:  #FFE17B; /* Set focus border color */
 box-shadow:  #FFE17B; /* Optional: Add focus box shadow */
 }
-
-
 </style>
-

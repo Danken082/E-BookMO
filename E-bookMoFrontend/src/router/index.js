@@ -18,21 +18,31 @@ const routes = [
     component: ()=> import(/*webpackChunkName: "finance"*/ '../views/admin/home.vue')
   },
   
+
   {
-    path:'/try',
-    name: 'try',
-    component: ()=> import(/*webpackChunkName: "finance"*/ '../views/a/try.vue')
+    path:'/adminlogin',
+    name:'adminlogin',
+    component: ()=> import(/*webpackChunkName: "finance"*/ '../views/dashboard/adminform/Login.vue')
   },
+
+  {
+    path:'/adminsignup',
+    name:'adminsignup',
+    component: ()=> import(/*webpackChunkName: "finance"*/ '../views/dashboard/adminform/Signup.vue')
+  },
+
   {
     path:'/home',
     name: 'homeadmin',
     component: ()=> import(/*webpackChunkName: "finance"*/ '../views/dashboard/home.vue')
   },
+
   {
     path:'/about',
     name: 'about',
     component: ()=> import(/*webpackChunkName: "finance"*/ '../views/admin/about.vue')
   },
+
   {
     path:'/chart',
     name: 'chart',
