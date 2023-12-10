@@ -20,7 +20,6 @@ $routes->get('try', 'LoginController::try');
 //For Admin
 $routes->get('home', 'AdminController::home');
 $routes->get('booked', 'AdminController::booked');
-
 $routes->get('chart-view', 'AdminController::Chart');
 
 $routes->group('admin', static function($routes){

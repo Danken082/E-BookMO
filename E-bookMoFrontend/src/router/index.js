@@ -52,8 +52,8 @@ const routes = [
    
    {
     path:'/books',
-     name: 'book',
-     component: ()=> import(/*webpackChunkName: "finance"*/ '../views/dashboard/booked.vue')
+     name: 'booking',
+     component: ()=> import(/*webpackChunkName: "finance"*/ '../views/dashboard/booking.vue')
    },
    {
     path:'/check_in',

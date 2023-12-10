@@ -24,13 +24,13 @@ class AdminController extends ResourceController
         // }
     }
     public function home(){
-        echo view('dashboard/home');
+        return view('dashboard/home');
     }
 
     
     public function booked()
     {
-        echo view('dashboard/booked');
+        return view('dashboard/booked');
     }
 
     public function Chart(){

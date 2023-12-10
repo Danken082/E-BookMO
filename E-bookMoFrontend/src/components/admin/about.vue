@@ -17,7 +17,7 @@
             </h2>
           </div>
           <p style="color:rgb(80, 78, 78);">
-            This site is for reservation for our appartment and trancient you are free to visit our site.
+            This site is for reservation for our appartment and trancient you are free to visit our site.ahdud
           </p>
           <a href="/visit">
             Visit Us

@@ -9,53 +9,53 @@
             <hr class="sidebar-divider my-0">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="/home">
+                <a class="nav-link" href="home">
                     <i class="fa-solid fa-house-user"></i>
                     <span>Home</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/dash">
+                <a class="nav-link" href="dash">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/booked">
+                <a class="nav-link collapsed" href="books">
                     <i class="fa-solid fa-book"></i>
                     <span>Booked</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/check_in">
+                <a class="nav-link collapsed" href="checkin">
                     <i class="fa-solid fa-building-circle-check"></i>
                     <span>Check In</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/check_out">
+                <a class="nav-link collapsed" href="checkout">
                     <i class="fa-solid fa-building-circle-check"></i>
                     <span>Check Out</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/rooms">
+                <a class="nav-link collapsed" href="rooms">
                     <i class="fa-solid fa-bed"></i>
                     <span>Rooms</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/room_categ">
+                <a class="nav-link collapsed" href="room_categ">
                     <i class="fa-solid fa-list"></i>
                     <span>Room Category List</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/users">
+                <a class="nav-link collapsed" href="users">
                     <i class="fa-solid fa-users"></i>
                     <span>Users</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/site_set">
+                <a class="nav-link collapsed" href="site_set">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Site Settings</span>
                 </a>

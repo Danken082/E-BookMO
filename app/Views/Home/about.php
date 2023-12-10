@@ -51,7 +51,7 @@
               </h2>
             </div>
             <p>
-              This site is for reservation for our appartment and trancient you are free to visit our site.kh
+              This site is for reservation for our appartment and trancient you are free to visit our site.
             </p>
             <a href="">
               Visit Us
