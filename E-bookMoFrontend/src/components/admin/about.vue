@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="img-box">
-          <img src="images/4C.jpeg" alt="4C">
+          <img src="images/4C.jpg" alt="4C">
         </div>
       </div>
       <div class="col-md-6">

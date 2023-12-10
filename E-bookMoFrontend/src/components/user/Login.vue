@@ -4,7 +4,7 @@
    <div class="container-fluid h-custom">
      <div class="row d-flex justify-content-center align-items-center h-100">
        <div class="col-md-9 col-lg-6 col-xl-5">
-    <img src="<%= BASE_URL %>/image/4C.jpeg" alt="4C Image" class="img-fluid"> 
+    <img src="images/4C.jpg" alt="4C Image" class="img-fluid"> 
  
   
  </div>
@@ -21,9 +21,7 @@
              <button type="button" class="btn btn-primary btn-floating mx-1 btn-twitter">
                <i class="fab fa-twitter"></i>
              </button>
- 
- 
- 
+
              <button type="button" class="btn btn-primary btn-floating mx-1 btn-linkedin">
                <i class="fab fa-linkedin-in"></i>
              </button>
@@ -97,9 +95,7 @@
      <!-- Right -->
    </div>
  </section> 
-        
- 
- 
+
      </template>
  
      <script>
@@ -152,7 +148,7 @@
  
    /* Style for the custom button */
    .btn-facebook {
-     background-color: #FD8D14 !important;
+     background-color: #0000FF !important;
      color: white;
    }
  
@@ -162,9 +158,6 @@
      color: white;
    }
    
- 
- 
- 
    .form-control {
      font-size: 13px; 
      color: #333; 
@@ -173,7 +166,7 @@
  
    /* Style for the Twitter button */
    .btn-twitter {
-     background-color: #FD8D14 !important;
+     background-color: #0000FF !important;
      color: white;
    }
  
@@ -192,7 +185,7 @@
  
    /* Style for the LinkedIn button */
    .btn-linkedin {
-     background-color: #FD8D14 !important;
+     background-color: #0000FF !important;
      color: white;
    }
  
@@ -201,13 +194,5 @@
      background-color: #FD8D14 !important;
      color: white;
    }
-   
- 
- 
-   
- 
- 
-   
+
  </style>
- 
- 

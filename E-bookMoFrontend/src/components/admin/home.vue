@@ -15,9 +15,9 @@
                     Clean and <br> Affordable <br>Apartment <br> for you
                     </h1>
                     <p>
-                     You are Finding Afordable And budget Friendly Appartment and transient?<br>
+                     You are Finding Affordable And budget Friendly Appartment and Transient?<br>
                      <br>
-                     "This is the Appartment And transient For You."
+                     "This is the Apartment And Transient For You."
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">

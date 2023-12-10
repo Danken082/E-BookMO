@@ -72,12 +72,6 @@
                     <span>Users</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="/site_set">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Site Settings</span>
-                </a>
-            </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
         </ul>
