@@ -19,7 +19,7 @@
                     <span>Dashboard</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/books">
+                <a class="nav-link collapsed" href="/booked">
                     <i class="fa-solid fa-book"></i>
                     <span>Booked</span>
                 </a>

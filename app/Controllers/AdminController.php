@@ -6,7 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\RoomModels;
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\API\ResponseTrait;
-class DashboardController extends ResourceController
+class AdminController extends ResourceController
 {
     use ResponseTrait;
     public function index()
@@ -24,8 +24,15 @@ class DashboardController extends ResourceController
         // }
     }
     public function home(){
-        echo view('admin/home');
+        echo view('dashboard/home');
     }
+
+    
+    public function booked()
+    {
+        echo view('dashboard/booked');
+    }
+
     public function Chart(){
         $data = [
             'labels' => ['January', 'February', 'March', 'April', 'May'],

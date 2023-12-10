@@ -16,8 +16,12 @@ $routes->match(['get','post'], 'LoginController/login', 'LoginController::loginA
 $routes->get('login', 'LoginController::index');
 $routes->get('view', 'RoomController::Index');
 $routes->get('try', 'LoginController::try');
-$routes->get('home', 'DashboardController::home');
-$routes->get('chart-view', 'DashboardController::Chart');
+
+//For Admin
+$routes->get('home', 'AdminController::home');
+$routes->get('booked', 'AdminController::booked');
+
+$routes->get('chart-view', 'AdminController::Chart');
 
 $routes->group('admin', static function($routes){
                $routes->get('save', 'RoomController::insertRoom');
