@@ -1,7 +1,7 @@
 <template>
 
   <!-- header section strats -->
-  <header  class="header_section long_section px-0">
+  <header  class="header_section">
     <nav class="navbar navbar-expand-lg custom_nav-container ">
       <a class="navbar-brand" href="">
         <div class="img-box"><img src="images/4Clogo.jpg" alt="4C"></div>
@@ -59,12 +59,17 @@
 </template>
 
 <style scoped>
+.header_section{
+  background: rgb(255,10,117);
+  background: linear-gradient(90deg, rgba(255,10,117,1) 27%, rgba(255,0,0,1) 50%, rgba(244,255,0,1) 100%);
+}
+
 .navbar-nav .nav-item a:hover {
-color: #FD8D14;
+color: whitesmoke;
 }
 
 .quote_btn-container a:hover {
-color: #FD8D14;
+color: whitesmoke;
 }
 
 .nav_search-btn:hover {
