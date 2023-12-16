@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Chart from 'chart.js';
+import {Chart} from 'vue-chartjs';
 
 export default {
   data() {
@@ -34,7 +34,7 @@ export default {
     },
     renderChart() {
       // Get the canvas element
-      const ctx = this.$refs.myChart.getContext('2d');
+      const ctx = this.$refs.myChart.getContext('3d');
 
       // Create a new Chart instance
       this.chart = new Chart(ctx, {

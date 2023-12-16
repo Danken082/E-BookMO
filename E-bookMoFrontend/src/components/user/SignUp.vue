@@ -16,41 +16,41 @@
           <!-- LastName input chuchu -->
           <div class="form-outline mb-3">
             <label class="form-label" for="form3Example3" style="color: rgb(65, 62, 62);" >Last Name</label>
-            <input type="lastname" id="form3Example3" class="form-control form-control-lg " placeholder ="Enter your last name" style="height: 35px; "/>
+            <input type="text" id="form3Example3" class="form-control form-control-lg " v-model="LastName" placeholder ="Enter your last name" style="height: 35px; "/>
           </div>
 
           <!-- FirstName input -->
           <div class="form-outline mb-3">
             <label class="form-label" for="form3Example3" style="color: rgb(65, 62, 62);">First Name</label>
-            <input type="firstname" id="form3Example4" class="form-control form-control-lg" placeholder="Enter your first name" style="height: 35px;"/>
+            <input type="text" v-model="FirstName" id="form3Example4" class="form-control form-control-lg" placeholder="Enter your first name" style="height: 35px;"/>
           </div>
 
            <!-- ContactNumber input -->
            <div class="form-outline mb-3">
             <label class="form-label" for="form3Example4" style="color: rgb(65, 62, 62);">Contact Number</label>
-            <input type="contactnumber" id="form3Example4" class="form-control form-control-lg" placeholder="Contact Number" style="height: 35px;"/>
+            <input type="text" v-model="ContactNo" id="form3Example4" class="form-control form-control-lg" placeholder="Contact Number" style="height: 35px;"/>
           </div>
 
            <!-- Username input -->
            <div class="form-outline mb-3">
             <label class="form-label" for="form3Example4" style="color:  rgb(65, 62, 62);">Username</label>
-            <input type="username" id="form3Example4" class="form-control form-control-lg" placeholder="Username" style="height: 35px;"/>
+            <input type="text" v-model="username" id="form3Example4" class="form-control form-control-lg" placeholder="Username" style="height: 35px;"/>
           </div>
 
            <!-- Email input -->
            <div class="form-outline mb-3">
             <label class="form-label" for="form3Example4" style="color: rgb(65, 62, 62);">Email</label>
-            <input type="email" id="form3Example4" class="form-control form-control-lg" placeholder="Enter your email"  style="height: 35px;" />
+            <input type="email" v-model="email" id="form3Example4" class="form-control form-control-lg" placeholder="Enter your email"  style="height: 35px;" />
           </div>
 
            <!-- Password input -->
            <div class="form-outline mb-3">
             <label class="form-label" for="form3Example4" style="color: rgb(65, 62, 62);">Password</label>
-            <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Enter password" style="height: 35px;" />
+            <input type="password" v-model="password" id="form3Example4" class="form-control form-control-lg" placeholder="Enter password" style="height: 35px;" />
           </div>
 
           <div class="text-center text-lg-start mt-4 pt-2">
-            <button type="button" class="btn btn-primary btn-lg"
+            <button type="submit" class="btn btn-primary btn-lg"
               style="padding-left: 2.5rem; padding-right: 2.5rem;">Register</button>
             <p class="small fw-bold mt-2 pt-1 mb-0" style="color: black;">Already have an account? <a href="/Login"
                 class="link-danger">Login</a></p>

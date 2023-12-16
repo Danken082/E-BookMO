@@ -3,55 +3,61 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-
-class SignupController extends BaseController
+use CodeIgniter\RestFul\ResourceController;
+use \App\Models\UserModel;
+class SignupController extends ResourceController
 {
+    private $user;
     public function __construct()
     {
-        $this->user = new \App\Models\UserModel();
+        $this->user = new UserModel();
     }
-    public function index()
-    {
-        helper(['form']);
-        $data = [];
-        return view('signup', $data);
+  
 
-    }
-
-    public function insert()
+public function hi(){
+    echo 'hi';
+}
+    public function register()
     {
-        helper(['from']);
+        try{
         $validation = [
-            'LastName' => 'required|min_length[2]|max_length[50]',
-            'FirstName' => 'required|min_length[2]|max_length[50]',
-            'ContactNo' => 'required|min_length[11]|max_length[14]',
-            'username' => 'required|min_length[5]|max_length[50]',
-            'email' => 'required|min_length[5]|max_length[50]|valid_email|is_unique[usertbl.email]',
-            'password' => 'required|min_length[5]|max_length[50]',
+            'LastName' => [ 'rules'=>'required|min_length[2]|max_length[50]'],
+            'FirstName' => ['rules'=>'required|min_length[2]|max_length[50]'],
+            'ContactNo' => ['rules'=>'required|min_length[11]|numeric|max_length[14]'],
+            'username' => ['rules'=>'required|min_length[5]|max_length[50]'],
+            'email' => ['rules'=>'required|min_length[5]|max_length[50]|valid_email|is_unique[usertbl.email]'],
+            'password' => ['rules'=>'required|min_length[5]|max_length[50]'],
+            
             
         ];
 
         if($this->validate($validation))
         {
-            $data= 
+       $data= 
             [
                 'LastName' => $this->request->getVar('LastName'),
                 'FirstName' => $this->request->getVar('FirstName'),
                 'ContactNo' => $this->request->getVar('ContactNo'),
                 'username' => $this->request->getVar('username'),
                 'email' => $this->request->getVar('email'),
-                'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+                'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
             ];
-            $this->user->save($data);
-            return redirect()->to('/login');
+
+            
+           $save = $this->user->save($data);
+            return $this->respond($save, 200);
         }
         else{
-            $data['validation'] = $this->validator;
-            echo view('signup', $data);
-
+            $response = [
+                'errors' => $this->validator->getErrors(),
+                'message' => 'Invalid Inputs'
+            ];
+            return $this->respond($response);
+        }
+        }
+        catch (\Throwable $e) {
+            return $this->respond(["message" => "Error: " . $e->getMessage()],);
         }
     }
-    // public function try(){
-    //     return view('signup');
-    // } 
+     
 }
