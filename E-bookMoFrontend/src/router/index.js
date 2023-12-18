@@ -106,9 +106,19 @@ const routes = [
     component: ()=> import(/*webpackChunkName: "finance"*/ '../views/admin/rent.vue') 
    },
    {
+    path:'/booking',
+    name: 'booking',
+    component: ()=> import(/*webpackChunkName: "finance"*/ '../views/admin/booking.vue') 
+   },
+   {
     path:'/room1',
     name: 'room1',
     component: ()=> import(/*webpackChunkName: "finance"*/ '../components/admin/apartment/room1.vue') 
+   },
+   {
+    path:'/room2',
+    name: 'room2',
+    component: ()=> import(/*webpackChunkName: "finance"*/ '../components/admin/apartment/room2.vue') 
    },
    {
      path:'/login',

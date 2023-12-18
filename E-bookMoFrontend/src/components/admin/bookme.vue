@@ -11,7 +11,7 @@
             <div class="transient">
                 <h2>Transient</h2>
                 <img src="images/transient.jpg" alt="transient" width="300" height="300"><br><br>
-                <a class="button" href="transient" >Book</a>
+                <a class="button" href="booking" >Book</a>
             </div>
         </div>
 </template>
