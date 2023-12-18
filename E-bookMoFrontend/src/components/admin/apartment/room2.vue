@@ -8,8 +8,7 @@
             <p>Hello</p>
         </div>
         <a href="rent" class="bck">Back</a>
-    </div>
-        
+    </div>  
 </template>
 
     <style>

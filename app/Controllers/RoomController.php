@@ -20,8 +20,8 @@ class RoomController extends ResourceController
     public function index()
     {
         $room = new RoomModel();
-        $data['room'] = $room->findAll();
-        return view('UserLogin/reservation', $data);
+        $data = $room->findAll();
+    return $this->respond($data, 200);
     }
     public function room(){
         $room = new RoomModel();

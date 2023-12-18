@@ -96,10 +96,30 @@
 
 <script>
 import headers from '@/components/admin/include/header.vue'
+import axios from 'axios'
+
 
 export default{
     components:{
         headers
+    },
+    data(){
+        return{
+            room:[]
+        }
+    },
+    created(){
+        this.getInfo()
+    },
+
+    methods:{
+        async getInfo(){
+            try {
+                const ins = await axios.post('admin/view')
+                    this.room = ins.data;
+            } catch (error) {
+                console.log(error)
+            }        }
     }
 }
 </script>

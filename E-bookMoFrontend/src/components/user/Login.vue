@@ -10,8 +10,7 @@
  </div>
  
        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-         <form>
-           <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+        <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
              <br>
              <p class="lead fw-normal mb-0 me-3" style="color: black">Sign in with</p>
              <button type="button" class="btn btn-primary btn-floating mx-1 btn-facebook">
@@ -28,20 +27,22 @@
  
            </div>
  
+         <form @submit.prevent="login">
+         
            <div class="divider d-flex align-items-center my-4">
              <p class="text-center fw-bold mx-3 mb-0" style="color:  rgb(65, 62, 62);">Or</p>
            </div>
  
            <!-- Email input -->
            <div class="form-outline mb-4">
-             <input type="email" id="form3Example3" class="form-control form-control-lg"
+             <input type="email" v-model="email" id="form3Example3" class="form-control form-control-lg"
                placeholder="Enter a valid email address" />
              <label class="form-label" for="form3Example3" style="color:  rgb(65, 62, 62);">Email address</label>
            </div>
  
            <!-- Password input -->
            <div class="form-outline mb-3">
-             <input type="password" id="form3Example4" class="form-control form-control-lg"
+             <input type="password" v-model="password" id="form3Example4" class="form-control form-control-lg"
                placeholder="Enter password"/>
              <label class="form-label" for="form3Example4" style="color:  rgb(65, 62, 62);">Password</label>
            </div>
@@ -58,7 +59,7 @@
            </div>
  
            <div class="text-center text-lg-start mt-4 pt-2">
-             <button type="button" class="btn btn-primary btn-lg custom-button">Login</button>
+             <button type="submit" class="btn btn-primary btn-lg custom-button">Login</button>
              <p class="small fw-bold mt-2 pt-1 mb-0" style="color: black">Don't have an account yet?<a href="/SignUp"
                  class="link-danger">Register</a></p>
            </div>
@@ -99,12 +100,35 @@
      </template>
  
      <script>
+    
+     import axios from 'axios'
      import headers from '@/components/admin/include/header.vue'
      export default{
  
          components:{
              headers
-         }
+         },
+         data(){
+          return{
+            email:'',
+            password:''
+          }
+         
+         },
+         methods:{
+              async login(){
+              
+                try {
+                  const response = await axios.post('user/login',  {
+                    email: this.email,
+                    password: this.password      
+                  })
+                  this.$router.push('/')
+                } catch (error) {
+                  console.log(error)
+                }
+              }
+            }
      }
  
      </script> 

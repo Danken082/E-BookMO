@@ -8,7 +8,7 @@
           class="img-fluid">
       </div>
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-        <form>
+        <form @submit.prevent="register">
           <div class="divider d-flex align-items-center my-4">
             <h3 class="text-center fw-bold mx-3 mb-0" style="color: #FD8D14; font-family: 'Lucida Sans';" >Register Here</h3>
           </div>
@@ -24,7 +24,7 @@
             <label class="form-label" for="form3Example3" style="color: rgb(65, 62, 62);">First Name</label>
             <input type="text" v-model="FirstName" id="form3Example4" class="form-control form-control-lg" placeholder="Enter your first name" style="height: 35px;"/>
           </div>
-
+          <input type="hidden" v-model="userRole">
            <!-- ContactNumber input -->
            <div class="form-outline mb-3">
             <label class="form-label" for="form3Example4" style="color: rgb(65, 62, 62);">Contact Number</label>
@@ -97,8 +97,44 @@ import headers from '@/components/admin/include/header.vue'
     },
     data(){
       return{
-        
+        LastName: '',
+      FirstName: '',
+      userRole:'Customer',
+      ContactNo: '',
+      username: '', 
+      email: '',
+      password: '',  
       }
+    },
+    methods:{
+      async register(){
+        const formData = new FormData();
+      formData.append('LastName', this.LastName);
+      formData.append('FirstName', this.FirstName);
+      formData.append('userRole', this.userRole);
+      formData.append('ContactNo', this.ContactNo);
+      formData.append('username', this.username);
+      formData.append('email', this.email);
+      formData.append('password', this.password);
+        console.log(formData.values)
+      try {
+        const register = await axios.post('user/register', formData,{
+          headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+                })
+                console.log('Headers:', axios.defaults.headers);
+                console.log('Request Data:', formData);
+
+                console.log(register);
+
+                this.$refs.registerForm.reset();
+            } catch (error) {
+                console.log(error);
+            }
+
+      },
+  
     }
   }
   </script>
