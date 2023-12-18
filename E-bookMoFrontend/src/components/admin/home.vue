@@ -1,8 +1,6 @@
 <template>
-        <div class="hero_area">
-    <!-- header section strats -->
+      <div class="hero_area">
     <headers/>
-  <!-- slider section -->
     <section class="slider_section long_section">
       <div id="customCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -98,32 +96,9 @@
               </div>
             </div>
           </div>
-        <ol class="carousel-indicators">
-          <li data-target="#customCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#customCarousel" data-slide-to="1"></li>
-          <li data-target="#customCarousel" data-slide-to="2"></li>
-        </ol>
       </div>
     </section>
-    <!-- end slider section -->
   </div>
-
-  <!-- furniture section -->
-
-  
-  <!-- about section -->
-
-  
-
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &trade; <span id="displayYear"></span> 
-      </p>
-    </div>
-  </footer>
-  <!-- footer section -->
 </template>
 
 <script>

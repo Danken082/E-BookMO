@@ -1,17 +1,17 @@
 <template>
     <headers/>
     <div class="container">
-        <h1>Book Now!</h1>
+        <h1>Rent and Book Now in our Transient and Apartment</h1>
             <div class="apartment">
                 <h2>Apartment</h2>
                 <img src="images/apartment.jpg" alt="apartment" width="300" height="300"><br><br>
-                <button>Rent</button>
+                <a class="button" href="rent" >Rent</a>
             </div>
 
             <div class="transient">
                 <h2>Transient</h2>
                 <img src="images/transient.jpg" alt="transient" width="300" height="300"><br><br>
-                <button>Book</button>
+                <a class="button" href="transient" >Book</a>
             </div>
         </div>
 </template>
@@ -49,16 +49,18 @@
             background-color: whitesmoke;
         }
 
-        button {
+        .button {
+            display: inline-block;
             background-color: red;
             color: white;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-            border: none;
+            box-sizing: border-box;
+            border-radius: 5px;
         }
 
-        button:hover {
+        .button:hover {
             background-color: yellow;
             color: black;
         }
