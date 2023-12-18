@@ -37,6 +37,7 @@ class RoomController extends ResourceController
             'roomNo' => $json->roomNo,
             'roomType' => $json->roomType,
             'Price ' => $json->Price,
+            'File' => $json->file,
             'MaxPerson' => $json->MaxPerson,
             'Status' => $json->Status,
         ];

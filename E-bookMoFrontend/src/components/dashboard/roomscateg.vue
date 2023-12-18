@@ -7,26 +7,49 @@
                     <div class="row">
                     	<!-- FORM Panel -->
                     	<div class="col-md-4">
-                            <form action="" id="manage-room">
+                            <form @submit.prevent="insertRoom" id="manage-room">
                                 <div class="card">
                                     <div class="card-header">Room Form</div>
                                         <div class="card-body">
                                             <input type="hidden" name="id">
                                                 <div class="form-group">
-                                                    <label class="control-label">Room</label>
-                                                    <input type="text" class="form-control" name="room">
+                                                    <label class="control-label">Room Number</label>
+                                                    <input type="Number " class="form-control" v-model="roomNo">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Room Type</label>
+                                                    <input type="No" class="form-control" v-model="roomType">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label">Category</label>
-                                                    <select class="custom-select browser-default" name="category_id"></select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="" class="control-label">Availability</label>
-                                                    <select class="custom-select browser-default" name="status">
-                                                        <option value="0">Available</option>
-                                                        <option value="1">Unavailable</option>
+                                                    <select class="custom-select browser-default" v-model="RoomCategory">
+                                                        <option selected disabled>Room Categoty</option>
+                                                        <option >Transient</option>
+                                                        <option>Appartment</option>
+
                                                     </select>
+                                                </div>  
+                                                <div class="form-group">
+                                                    <label for="" class="control-label">Availability</label>                                                    
+                                                    <select class="custom-select browser-default" v-model="status">
+                                                        <option selected disabled>RoomStatus</option>
+                                                        <option >Available</option>
+                                                        <option >Unavailable</option>
+                                                    </select>
+                                                    <div class="form-group">
+                                                    <label class="control-label">Price</label>
+                                                    <input type="No" class="form-control" v-model="Price">
                                                 </div>
+                                                    <div class="form-group">
+                                                    <label class="control-label">File</label>
+                                                    <input type="text" class="form-control" v-model="file">
+                                                </div>
+                                                    <div class="form-group">
+                                                    <label class="control-label">Max Person</label>
+                                                    <input type="text" class="form-control" v-model="MaxPerson">
+                                                </div>
+                                                </div>
+                                                
                                         </div>
 							
                                         <div class="card-footer">
@@ -69,6 +92,35 @@ import sidebar from '@/components/dashboard/include/sidebar.vue'
     export default{
         components:{
             sidebar
+        },
+        data(){
+            return{
+                roomNo:"",
+                roomType:"",
+                Price:"",
+                file:"",
+                MaxPerson:"",
+                Status:""
+                
+            }
+        },
+        methods:{
+            async insertRoom(){
+                const formData = new FormData();
+                formData.append('roomNo', this.roomNo);
+                formData.append('roomType', this.roomType);
+                formData.append('Price', this.Price);
+                formData.append('MaxPerson', this.MaxPerson);
+                formData.append('RoomCategory', this.RoomCategory);
+                formData.append('status', this.status);
+                    try {
+                        const room = await axios.post('user/')
+                    } catch (error) {
+                        
+                    }
+            }
         }
     }
+
+    
 </script>

@@ -1,23 +1,26 @@
 <template>
     <nav id="sidebar">
-    <a href="/Transient">Transient</a>
-    <a href="/Appartment">Appartment</a>
-    <a href="#">Status</a>
-    <a href="#">Profile</a>
-</nav>
-
-<div id="content">
-<roomTrancient/>
-</div>        
+        <a href="/Transient">Transient</a>
+        <a href="/Appartment">Appartment</a>
+        <a href="#">Status</a>
+        <a href="#">Profile</a>
+    </nav>
+    
+    <div id="content">
+    <rent/>
+    </div>        
+    
 
 </template>
-<script>
-    import roomTracient from '@/components/admin/transient/room1.vue'
 
+
+<script>
+
+    import rent from '@/components/admin/rent.vue'
 
     export default{
         components:{
-            roomTracient
+            rent
         }
     }
 </script>

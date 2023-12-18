@@ -1,15 +1,15 @@
 <template>
-    <headers/>
+    
         <div class="plans-section" id="rooms">
             <a href="book" class="bck">Back</a>
             <div class="container">
                 <h3 class="title-w3-agileits title-black-wthree">Rooms And Rates</h3>
-				<div class="priceing-table-main">
+				<div class="priceing-table-main" v-for="room in room">
                     <div class="col-md-6 price-grid">
-					    <div class="price-block agile">
+					    <div class="price-block agile" >
 						    <div class="price-gd-top">
-						        <img src="images/1.jpg" alt="image1" />
-							    <h4>Room 1</h4>
+						        <img src="/images/{{ room.file }}" alt="image1" />
+							    <h4>Room {{ room.roomNo }}</h4>
 						    </div>
 						    <div class="price-gd-bottom">
 			                    <div class="price-list">
@@ -22,8 +22,8 @@
 				                    </ul>
 							    </div>
 							    <div class="price-selet">	
-								    <h3><span>$</span>700</h3>						
-								    <a href="room1" >Rent Now</a>
+								    <h3><span>₱</span>{{ room.Price }}</h3>						
+								    <a href="" >Rent Now</a>
 							    </div>
 						    </div>
 					    </div>
@@ -56,7 +56,20 @@
                 </div>
             </div>
         </div>
-        
+        <!-- <table>
+            <tr>
+            <th>Room No</th>
+            <th>Room type</th>
+            <th>Categ</th>
+            <th>Price</th>
+            <th>File</th>
+            <th>Max Person</th>
+            <th>Status</th>
+        </tr>
+        <tr v-for="room in room">
+            <td>{{ room.roomNo }}</td>
+        </tr>
+        </table> -->
 </template>
 
     <style>
@@ -179,10 +192,36 @@
 
 <script>
 import headers from '@/components/admin/include/header.vue'
+import axios from 'axios'
 
 export default{
     components:{
         headers
+    },
+    data(){
+        return{
+            room:[],
+        }
+    },
+
+   
+    created(){
+        this.getRoom();
+    },
+
+    methods:{
+        async getRoom(){
+
+
+            try {
+                
+                const inf = await axios.get('admin/view')
+                this.room = inf.data;
+                
+            } catch (error) {
+                
+            }
+        }
     }
 }
 </script>

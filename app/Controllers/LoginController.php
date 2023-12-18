@@ -67,7 +67,7 @@ class LoginController extends ResourceController
 // }
 public function loginAuth(){
     try {
-            $session = session();
+        $session = session();
 
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
