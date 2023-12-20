@@ -49,11 +49,8 @@
                                                 </div>
                                                     <div class="form-group">
                                                     <label class="control-label">File</label>
-                                                    <input type="file" class="form-control" ref="file" @change="handleFileChange($event)">
-                                                    <div v-if="previewUrl">
-                                                    <h4>Preview: </h4>
-                                                    <img :src="previewUrl" alt="File Preview">
-                                                    </div>
+                                                    <input type="file" class="form-control" ref="file" @change="handleFileChange">
+                                                    
                                                 </div>
                                                     <div class="form-group">
                                                     <label class="control-label">Max Person</label>
@@ -125,7 +122,7 @@ import sidebar from '@/components/dashboard/include/sidebar.vue'
                 roomType:"",
                 RoomCateg:"",
                 Price:"",
-                // previewUrl:null,
+                selectedFile:null,
                 MaxPerson:"",
                 Status:""
                 
@@ -135,6 +132,10 @@ import sidebar from '@/components/dashboard/include/sidebar.vue'
             this.getInfo()
         },
         methods:{
+            handleFileChange(event) {
+      // Handle file change event
+      this.selectedFile = event.target.files[0];
+    },
             async delectRoom(RoomID){
                 await axios.post('admin/deleteRoom',{
                     roomID: RoomID
@@ -156,7 +157,7 @@ import sidebar from '@/components/dashboard/include/sidebar.vue'
                 formData.append('roomNo', this.roomNo);
                 formData.append('roomType', this.roomType); 
                 formData.append('Price', this.Price);
-                // formData.append('file', this.selectedFile[0], this.selectedFile[0].name);
+                formData.append('file', this.selectedFile);
                 formData.append('MaxPerson', this.MaxPerson);
                 formData.append('RoomCateg', this.RoomCateg);
                 formData.append('Status', this.Status);

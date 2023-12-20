@@ -33,10 +33,10 @@ class RoomController extends ResourceController
     public function insertRoom()
     {
         try {
-            // $file = $this->request->getFile('file');
-            // $newfile = $file->getRandomName();
+            $file = $this->request->getFile('file');
+            $newfile = $file->getRandomName();
                 $rules = [
-                    'roomNo' => ['rules' => 'required|is_unique'],
+                    'roomNo' => ['rules' => 'required'],
                     'RoomCateg' => ['rules' => 'required'],
                     'roomType' => ['rules' => 'required'],
                     'Price' => ['rules' => 'required'],
@@ -49,7 +49,7 @@ class RoomController extends ResourceController
                 'RoomCateg' => $this->request->getVar('RoomCateg'),
                 'roomType' => $this->request->getVar('roomType'),
                 'Price' => $this->request->getVar('Price'),
-                // 'file' => $newfile,
+                'file' => $newfile,
                 'MaxPerson' => $this->request->getVar('MaxPerson'),
                 'Status' => $this->request->getVar('Status')
             ];
