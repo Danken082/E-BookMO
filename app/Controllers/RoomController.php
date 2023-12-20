@@ -27,10 +27,7 @@ class RoomController extends ResourceController
         $data = $room->findAll();
         return $this->respond($data, 200);
     }
-    public function Transient(){
-        $data = $this->room->select('Count(*) as transient')->where('RoomCateg', 'Transient')->findAll();
-            return $this->respond($data, 200);
-    }
+   
 
 
     public function insertRoom()
@@ -39,8 +36,14 @@ class RoomController extends ResourceController
             // $file = $this->request->getFile('file');
             // $newfile = $file->getRandomName();
                 $rules = [
-                    
+                    'roomNo' => ['rules' => 'required|is_unique'],
+                    'RoomCateg' => ['rules' => 'required'],
+                    'roomType' => ['rules' => 'required'],
+                    'Price' => ['rules' => 'required'],
+                    'MaxPerson' => ['rules' => 'required'],
+                    'Status' => ['rules' => 'required']
                 ];
+                if($this->validate($rules)){
             $data = [
                 'roomNo' => $this->request->getVar('roomNo'),
                 'RoomCateg' => $this->request->getVar('RoomCateg'),
@@ -53,6 +56,14 @@ class RoomController extends ResourceController
 
             $save = $this->room->save($data);
                     return $this->respond($save, 200);
+        }
+        else{
+            $response = [
+                'errors' => $this->validator->getErrors(),
+                'message' => 'Invalid Inputs'
+            ];
+            return $this->respond($response);
+        }
         } catch (\Throwable $e) {
             return $this->respond(["message"=> "error: " . $e->getMessage()],);
         }

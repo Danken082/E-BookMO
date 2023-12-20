@@ -37,6 +37,6 @@ $routes->group('admin', static function($routes){
                $routes->post('deleteRoom', 'RoomController::delRoom');
                $routes->post('try', 'RoomController::try');
                $routes->get('view', 'RoomController::room');
-               $routes->get('transient', 'RoomController::Transient');
-               
+               $routes->get('transient', 'ViewController::Transient');
+                $routes->get('appartment','ViewController::Appartment');               
 });//Inserting Data to database
