@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class RoomModel extends Model
+class BookingModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'room';
-    protected $primaryKey       = 'roomID';
+    protected $table            = 'bookings';
+    protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['roomNo', 'roomType','RoomCateg', 'Price', 'file','MaxPerson', 'Status'];
+    protected $allowedFields    = ['CustomerID', 'roomID', 'BookingDate', 'checkinDate', 'chechoutDate', 'DownPayment', 'Pa '];
 
     // Dates
     protected $useTimestamps = false;

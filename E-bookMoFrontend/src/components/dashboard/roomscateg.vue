@@ -7,7 +7,7 @@
                     <div class="row">
                     	<!-- FORM Panel -->
                     	<div class="col-md-4">
-                            <form @submit.prevent="insertRoom" id="manage-room">
+                            <form @submit.prevent="insertRoom">
                                 <div class="card">
                                     <div class="card-header">Room Form</div>
                                         <div class="card-body">
@@ -18,11 +18,18 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label">Room Type</label>
-                                                    <input type="No" class="form-control" v-model="roomType">
+                                                    <select class="custom-select browser-default" v-model="roomType">
+                                                        <option selected disabled>Room Type</option>
+                                                        <option>Single</option>
+                                                        <option>Kings Size</option>
+                                                        <option>Masters BedRoom</option>
+                                                        
+                                                    </select>
+                                                    
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label">Category</label>
-                                                    <select class="custom-select browser-default" v-model="RoomCategory">
+                                                    <select class="custom-select browser-default" v-model="RoomCateg">
                                                         <option selected disabled>Room Categoty</option>
                                                         <option >Transient</option>
                                                         <option>Appartment</option>
@@ -31,7 +38,7 @@
                                                 </div>  
                                                 <div class="form-group">
                                                     <label for="" class="control-label">Availability</label>                                                    
-                                                    <select class="custom-select browser-default" v-model="status">
+                                                    <select class="custom-select browser-default" v-model="Status">
                                                         <option selected disabled>RoomStatus</option>
                                                         <option >Available</option>
                                                         <option >Unavailable</option>
@@ -42,7 +49,11 @@
                                                 </div>
                                                     <div class="form-group">
                                                     <label class="control-label">File</label>
-                                                    <input type="text" class="form-control" v-model="file">
+                                                    <input type="file" class="form-control" ref="file" @change="handleFileChange($event)">
+                                                    <div v-if="previewUrl">
+                                                    <h4>Preview: </h4>
+                                                    <img :src="previewUrl" alt="File Preview">
+                                                    </div>
                                                 </div>
                                                     <div class="form-group">
                                                     <label class="control-label">Max Person</label>
@@ -55,7 +66,7 @@
                                         <div class="card-footer">
                                             <div class="row">
                                             	<div class="col-md-12">
-                                            		<button class="btn btn-sm btn-primary col-sm-6 offset-md-3"> Save</button>
+                                            		<button type="submit" class="btn btn-sm btn-primary col-sm-6 offset-md-3"> Save</button>
                                             		<button class="btn btn-sm btn-default col-sm-6 offset-md-3" type="button" onclick="$('#manage-room').get(0).reset()"> Cancel</button>
                                             	</div>
 						                    </div>
@@ -74,9 +85,21 @@
                                 				<th class="text-center">Category</th>
                                 				<th class="text-center">Room</th>
                                 				<th class="text-center">Status</th>
-                                				<th class="text-center">Action</th>
+                                				<th class="text-center">Max Person</th>
+                                                <th class ="text-center">Action</th>
                                 			</tr>
                                 		</thead>
+
+                                        <tbody>
+                                            <tr v-for="room in roomInfo">
+                                                    <td>{{ room.roomNo }}</td>
+                                                    <td>{{ room.RoomCateg }}</td>
+                                                    <td>{{ room.roomType }}</td>
+                                                    <td>{{ room.Status }}</td>
+                                                    <td>{{ room.MaxPerson }}</td>
+                                                    <td><button class="btn btn-danger" @click="delectRoom(room.roomID)">Delete</button></td>
+                                            </tr>
+                                        </tbody>
                                     </table>
                                 </div>
                             </div>
@@ -88,6 +111,7 @@
     </div>
 </template>
 <script>
+import axios from 'axios'
 import sidebar from '@/components/dashboard/include/sidebar.vue'
     export default{
         components:{
@@ -95,29 +119,67 @@ import sidebar from '@/components/dashboard/include/sidebar.vue'
         },
         data(){
             return{
+
+                roomInfo:[],
                 roomNo:"",
                 roomType:"",
+                RoomCateg:"",
                 Price:"",
-                file:"",
+                // previewUrl:null,
                 MaxPerson:"",
                 Status:""
                 
             }
         },
+        created(){
+            this.getInfo()
+        },
         methods:{
+            async delectRoom(RoomID){
+                await axios.post('admin/deleteRoom',{
+                    roomID: RoomID
+                })
+                this.getInfo()
+            },
+            async getInfo(){
+            try {
+                const ins = await axios.get('admin/view')
+                this.roomInfo = ins.data
+            } catch (error) {
+                console.log(error)        
+            }
+            },
+             
             async insertRoom(){
+                console.log('hello')
                 const formData = new FormData();
                 formData.append('roomNo', this.roomNo);
-                formData.append('roomType', this.roomType);
+                formData.append('roomType', this.roomType); 
                 formData.append('Price', this.Price);
+                // formData.append('file', this.selectedFile[0], this.selectedFile[0].name);
                 formData.append('MaxPerson', this.MaxPerson);
-                formData.append('RoomCategory', this.RoomCategory);
-                formData.append('status', this.status);
+                formData.append('RoomCateg', this.RoomCateg);
+                formData.append('Status', this.Status);
                     try {
-                        const room = await axios.post('user/')
-                    } catch (error) {
-                        
-                    }
+                        const room = await axios.post('admin/save', formData,{
+                            headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+                })
+                console.log('Headers:', axios.defaults.headers);
+                console.log('Request Data:', formData);
+
+                console.log(room);
+                this.roomNo="",
+                this.roomType="",
+                this.RoomCateg="",
+                this.Price="",
+                // previewUrl:null,
+                this.MaxPerson="",
+                this.Status=""
+            } catch (error) {
+                console.log(error);
+            }
             }
         }
     }

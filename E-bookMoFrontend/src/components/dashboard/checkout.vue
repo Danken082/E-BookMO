@@ -17,6 +17,8 @@
                                             	<th>Status</th>
                                             	<th>Action</th>
                                             </thead>
+
+                                            <tbody></tbody>
 						                </table>
                                     </div>
 					            </div>

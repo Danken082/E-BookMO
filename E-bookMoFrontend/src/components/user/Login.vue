@@ -121,9 +121,9 @@
                 try {
                   const response = await axios.post('user/login',  {
                     email: this.email,
-                    password: this.password      
+                    password: this.password
                   })
-                  this.$router.push('/')
+                  this.$router.push('/appartment')
                 } catch (error) {
                   console.log(error)
                 }

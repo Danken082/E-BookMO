@@ -3,28 +3,29 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-
-class ViewController extends BaseController
+use CodeIgniter\RestFul\ResourceController;
+use App\Models\RoomModel;
+class ViewController extends ResourceController
 {
-    public function home()
-    {
-        return view('Home/home');
+    private $room;
+    public function __construct(){
+        $this->room = new RoomModel();
     }
-    public function about()
-    {
-        return view('Home/about');
+        public function roomCount()
+        {
+            $data= $this->room->countAll();
+            return $this->respond($data, 200);
 
-    }
-    public function contact()
-    {
-        return view('Home/Contactus');
-    }
-    public function visit()
-    {
-        return view('Home/visitus');
-    }
-    public function book()
-    {
-        return view('Home/bookme');
-    }
+        }
+
+
+        public function countAvarooms(){
+            $data = $this->room->select("Count(*) as available")->where('Status', 'Available')->findAll();
+            return $this->respond($data, 200);
+        }
+        public function countUnrooms(){
+            $data = $this->room->select("Count(Status) as unvailable")->where('Status', 'Unavailable')->findAll();
+            return $this->respond($data, 200);
+        }
+
 }

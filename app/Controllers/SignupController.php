@@ -26,9 +26,7 @@ public function hi(){
             'ContactNo' => ['rules'=>'required|min_length[11]|numeric|max_length[14]'],
             'username' => ['rules'=>'required|min_length[5]|max_length[50]'],
             'email' => ['rules'=>'required|min_length[5]|max_length[50]|valid_email|is_unique[usertbl.email]'],
-            'password' => ['rules'=>'required|min_length[5]|max_length[50]'],
-            
-            
+            'password' => ['rules'=>'required|min_length[5]|max_length[50]'],    
         ];
 
         if($this->validate($validation))

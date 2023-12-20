@@ -1,3 +1,4 @@
+
 <template>
   <headers/>  
   <section class="vh-100">
@@ -90,6 +91,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import headers from '@/components/admin/include/header.vue'
   export default{
     components:{
@@ -97,7 +99,7 @@ import headers from '@/components/admin/include/header.vue'
     },
     data(){
       return{
-        LastName: '',
+      LastName: '',
       FirstName: '',
       userRole:'Customer',
       ContactNo: '',
@@ -128,12 +130,19 @@ import headers from '@/components/admin/include/header.vue'
 
                 console.log(register);
 
-                this.$refs.registerForm.reset();
+        this.LastName = '';
+        this.FirstName = '';
+        this.userRole = 'Customer';
+        this.ContactNo = '';
+        this.username = '';
+        this.email = '';
+        this.password = '';
+
             } catch (error) {
                 console.log(error);
             }
 
-      },
+      }
   
     }
   }
@@ -163,7 +172,7 @@ import headers from '@/components/admin/include/header.vue'
     background-color:  #FFE17B; 
     border: 1px solid #FFE17B;
    
-  }
+}
 
 button.btn-primary:hover {
   background-color: #FD8D14;
@@ -172,4 +181,4 @@ button.btn-primary:hover {
 }
 
 
-  </style>
+</style>
