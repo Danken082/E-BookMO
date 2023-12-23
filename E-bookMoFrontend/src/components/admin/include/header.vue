@@ -1,5 +1,7 @@
 <template>
-  <header  class="header_section">
+
+  <!-- header section strats -->
+  <header  class="header_section long_section px-0">
     <nav class="navbar navbar-expand-lg custom_nav-container ">
       <a class="navbar-brand" href="">
         <div class="img-box"><img src="images/4Clogo.jpg" alt="4C"></div>
@@ -50,20 +52,19 @@
     </nav>
   </header>
  <br>
+
+
+  <!-- end header section -->
+
 </template>
 
 <style scoped>
-.header_section{
-  background: rgb(255,10,117);
-  background: linear-gradient(90deg, rgba(255,10,117,1) 27%, rgba(255,0,0,1) 50%, rgba(244,255,0,1) 100%);
-}
-
 .navbar-nav .nav-item a:hover {
-color: whitesmoke;
+color: #FD8D14;
 }
 
 .quote_btn-container a:hover {
-color: whitesmoke;
+color: #FD8D14;
 }
 
 .nav_search-btn:hover {

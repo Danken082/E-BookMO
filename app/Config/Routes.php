@@ -40,3 +40,5 @@ $routes->group('admin', static function($routes){
                $routes->get('transient', 'ViewController::Transient');
                 $routes->get('appartment','ViewController::Appartment');               
 });//Inserting Data to database
+
+$routes->get('user/(:any)', 'SignupController::user/$1');

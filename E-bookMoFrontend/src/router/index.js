@@ -146,6 +146,11 @@ const routes = [
      component: ()=> import(/*webpackChunkName: "finance"*/ '../views/admin/visitus.vue') 
    },
    
+   
+
+
+
+
 ]
 
 const router = createRouter({

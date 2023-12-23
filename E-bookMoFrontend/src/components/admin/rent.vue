@@ -1,61 +1,284 @@
 <template>
     
         <div class="plans-section" id="rooms">
-            <a href="book" class="bck">Back</a>
             <div class="container">
                 <h3 class="title-w3-agileits title-black-wthree">Rooms And Rates</h3>
-				<div class="priceing-table-main" v-for="room in room">
-                    <div class="col-md-6 price-grid">
-					    <div class="price-block agile" >
-						    <div class="price-gd-top">
-						        <img src="/images/{{ room.file }}" alt="image1" />
-							    <h4>Room {{ room.roomNo }}</h4>
-						    </div>
-						    <div class="price-gd-bottom">
-			                    <div class="price-list">
-									<ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
-				                    </ul>
-							    </div>
-							    <div class="price-selet">	
-								    <h3><span>₱</span>{{ room.Price }}</h3>						
-								    <a href="" >Rent Now</a>
-							    </div>
-						    </div>
-					    </div>
-				    </div>
+                <br>
+                <br>
                 </div>
-                <div class="priceing-table-main">
-                    <div class="col-md-6 price-grid">
-					    <div class="price-block agile">
-						    <div class="price-gd-top">
-						        <img src="images/2.jpg" alt="image2" />
-							    <h4>Room 2</h4>
-						    </div>
-						    <div class="price-gd-bottom">
-			                    <div class="price-list">
-									<ul>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
-				                    </ul>
-							    </div>
-							    <div class="price-selet">	
-								    <h3><span>$</span>900</h3>						
-								    <a href="room1" >Rent Now</a>
-							    </div>
-						    </div>
-					    </div>
-				    </div>
+            </div>
+        <table>
+        <tr>
+            <td>  <div class="pricing-table-container">
+    <div class="priceing-table-main">
+        <!-- Repeat the following structure for each room -->
+        <div class="col-md-4 price-grid">
+            <div class="price-block agile">
+                <div class="price-gd-top">
+                    <img src="images/2.jpg" alt="image2" />
+                    <h4>Room 1</h4>
+                </div>
+                <div class="price-gd-bottom">
+                    <div class="price-list">
+                        <ul>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="price-selet">
+                        <h3><span>$</span>700</h3>
+                        <a href="room1">Rent Now</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- End room structure -->
+    </div>
+</div></td>
+            <td><div class="pricing-table-container">
+    <div class="priceing-table-main">
+        <!-- Repeat the following structure for each room -->
+        <div class="col-md-4 price-grid">
+            <div class="price-block agile">
+                <div class="price-gd-top">
+                    <img src="images/2.jpg" alt="image2" />
+                    <h4>Room 2</h4>
+                </div>
+                <div class="price-gd-bottom">
+                    <div class="price-list">
+                        <ul>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="price-selet">
+                        <h3><span>$</span>7700</h3>
+                        <a href="room1">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End room structure -->
+    </div>
+</div></td>
+            <td><div class="pricing-table-container">
+    <div class="priceing-table-main">
+        <!-- Repeat the following structure for each room -->
+        <div class="col-md-4 price-grid">
+            <div class="price-block agile">
+                <div class="price-gd-top">
+                    <img src="images/2.jpg" alt="image2" />
+                    <h4>Room 3</h4>
+                </div>
+                <div class="price-gd-bottom">
+                    <div class="price-list">
+                        <ul>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="price-selet">
+                        <h3><span>$</span>7700</h3>
+                        <a href="room1">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End room structure -->
+    </div>
+</div></td>
+        </tr>
+        <tr>
+            <td><div class="pricing-table-container">
+    <div class="priceing-table-main">
+        <!-- Repeat the following structure for each room -->
+        <div class="col-md-4 price-grid">
+            <div class="price-block agile">
+                <div class="price-gd-top">
+                    <img src="images/2.jpg" alt="image2" />
+                    <h4>Room 4</h4>
+                </div>
+                <div class="price-gd-bottom">
+                    <div class="price-list">
+                        <ul>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="price-selet">
+                        <h3><span>$</span>7700</h3>
+                        <a href="room1">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End room structure -->
+    </div>
+</div></td>
+            <td><div class="pricing-table-container">
+    <div class="priceing-table-main">
+        <!-- Repeat the following structure for each room -->
+        <div class="col-md-4 price-grid">
+            <div class="price-block agile">
+                <div class="price-gd-top">
+                    <img src="images/2.jpg" alt="image2" />
+                    <h4>Room 5</h4>
+                </div>
+                <div class="price-gd-bottom">
+                    <div class="price-list">
+                        <ul>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="price-selet">
+                        <h3><span>$</span>7700</h3>
+                        <a href="room1">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End room structure -->
+    </div>
+</div></td>
+            <td><div class="pricing-table-container">
+    <div class="priceing-table-main">
+        <!-- Repeat the following structure for each room -->
+        <div class="col-md-4 price-grid">
+            <div class="price-block agile">
+                <div class="price-gd-top">
+                    <img src="images/2.jpg" alt="image2" />
+                    <h4>Room 6</h4>
+                </div>
+                <div class="price-gd-bottom">
+                    <div class="price-list">
+                        <ul>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="price-selet">
+                        <h3><span>$</span>7700</h3>
+                        <a href="room1">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End room structure -->
+    </div>
+</div></td>
+        </tr>
+        <tr>
+            <td><div class="pricing-table-container">
+    <div class="priceing-table-main">
+        <!-- Repeat the following structure for each room -->
+        <div class="col-md-4 price-grid">
+            <div class="price-block agile">
+                <div class="price-gd-top">
+                    <img src="images/2.jpg" alt="image2" />
+                    <h4>Room 7</h4>
+                </div>
+                <div class="price-gd-bottom">
+                    <div class="price-list">
+                        <ul>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="price-selet">
+                        <h3><span>$</span>7700</h3>
+                        <a href="room1">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End room structure -->
+    </div>
+</div></td>
+            <td><div class="pricing-table-container">
+    <div class="priceing-table-main">
+        <!-- Repeat the following structure for each room -->
+        <div class="col-md-4 price-grid">
+            <div class="price-block agile">
+                <div class="price-gd-top">
+                    <img src="images/2.jpg" alt="image2" />
+                    <h4>Room 8</h4>
+                </div>
+                <div class="price-gd-bottom">
+                    <div class="price-list">
+                        <ul>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="price-selet">
+                        <h3><span>$</span>7700</h3>
+                        <a href="room1">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End room structure -->
+    </div>
+</div></td>
+            <td><div class="pricing-table-container">
+    <div class="priceing-table-main">
+        <!-- Repeat the following structure for each room -->
+        <div class="col-md-4 price-grid">
+            <div class="price-block agile">
+                <div class="price-gd-top">
+                    <img src="images/2.jpg" alt="image2" />
+                    <h4>Room 9</h4>
+                </div>
+                <div class="price-gd-bottom">
+                    <div class="price-list">
+                        <ul>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="price-selet">
+                        <h3><span>$</span>7700</h3>
+                        <a href="room1">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End room structure -->
+    </div>
+</div></td>
+     </tr>
+    </table>
+
+                
+
         <!-- <table>
             <tr>
             <th>Room No</th>
@@ -77,11 +300,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+           
         }
+        
 
         .container {
             text-align: center;
             padding: 20px;
+           
         }
 
         .bck {
@@ -100,11 +326,14 @@
             color: black;
         }
 
-        h3 {
-            font-style: 'Raleway';
-            text-transform: uppercase;
-            color: #333;
+        
+        .title-w3-agileits.title-black-wthree {
+        color: red;
+        font-family:  sans-serif;
+        font-size: 10px;
+        margin-bottom: 1px;
         }
+
 
         .price-list ul {
             padding: 0px;
@@ -112,7 +341,7 @@
         }
         .price-gd-top {
             position: relative;
-            margin-top: 10vh;
+            margin-top: 5px;
             border: 1px solid black;
             text-align: center;
             position: relative;
@@ -188,6 +417,169 @@
             -ms-transform: scale(1.1);
             z-index: 1;
         }
+        .priceing-table-main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.price-grid {
+  width: 10%; /* Adjust the width as needed */
+}
+
+.price-block {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.price-gd-top img {
+  width: 10%;
+  height: auto;
+}
+
+.price-gd-top h4 {
+  text-align: center;
+  font-size: 20px; /* Adjust the font size as needed */
+  margin: 15px 0;
+}
+
+.price-gd-bottom {
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.price-list ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.price-list li {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.price-selet {
+  text-align: center;
+}
+
+.price-selet h3 {
+  font-size: 28px; /* Adjust the font size as needed */
+  margin: 10px 0;
+}
+
+.price-selet span {
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+.price-selet a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #fff;
+  background: #333;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.price-selet a:hover {
+  background: #555;
+}
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.title-w3-agileits.title-black-wthree {
+    color: red;
+    font-family: sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.priceing-table-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.price-grid {
+    width: 45%; /* Adjust the width as needed */
+    margin-bottom: 20px; /* Add some space between the table items */
+}
+
+.price-block {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.price-gd-top img {
+    width: 100%;
+    height: auto;
+}
+
+.price-gd-top h4 {
+    text-align: center;
+    font-size: 18px; /* Adjust the font size as needed */
+    margin: 15px 0;
+}
+
+.price-gd-bottom {
+    padding: 15px;
+    background: #f5f5f5;
+}
+
+.price-list ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.price-list li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.price-selet {
+    text-align: center;
+}
+
+.price-selet h3 {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin: 10px 0;
+}
+
+.price-selet span {
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.price-selet a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.price-selet a:hover {
+    background: #555;
+}
+
+
     </style>
 
 <script>

@@ -57,5 +57,10 @@ public function hi(){
             return $this->respond(["message" => "Error: " . $e->getMessage()],);
         }
     }
+    public function user($id){
+        
+        $data = $this->user->select('username')->where('UserID', $id)->find();
+        return $this->respond($data, 200);
+    }
      
 }
