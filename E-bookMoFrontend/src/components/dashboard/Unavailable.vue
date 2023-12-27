@@ -1,6 +1,6 @@
 <template>
-    <h1>TotalRooms: wergh{{ count }}</h1>
-    </template>
+    <h1>Total Unavailable: {{ count }}</h1>
+</template>
     
     <script>
         import axios from 'axios'
@@ -16,7 +16,7 @@
             methods:{
               async getInfo(){
             try {
-                const ins = await axios.get('/count')
+                const ins = await axios.get('admin/unavailable')
                 this.count = ins.data;
                 console.log('Total Rooms:', this.count);
             } catch (error) {

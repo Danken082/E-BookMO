@@ -1,5 +1,5 @@
 <template>
-    <h1>TotalRooms: wergh{{ count }}</h1>
+    <h1>TotalTransient: {{ count }}</h1>
     </template>
     
     <script>
@@ -16,7 +16,7 @@
             methods:{
               async getInfo(){
             try {
-                const ins = await axios.get('/count')
+                const ins = await axios.get('admin/transient')
                 this.count = ins.data;
                 console.log('Total Rooms:', this.count);
             } catch (error) {
