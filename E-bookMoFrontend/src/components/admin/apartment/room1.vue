@@ -4,7 +4,7 @@
         <div class="apartment">
             <h2>Room 1</h2>
             <img src="images/1.jpg" class="image1" alt="apartment" width="300" height="300"><br><br>
-            <a class="button" href="room1" >Rent Now</a>
+            <a class="button" href="/rentRoom" >Rent Now</a>
             <p>Hello</p>
         </div>
         <a href="rent" class="bck">Back</a>

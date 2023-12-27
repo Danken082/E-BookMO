@@ -23,5 +23,24 @@ class RentController extends ResourceController
        return $this->respond($data);
     }
 
+    public function rent(){
+        try {
+            $data = [
+                'Customername' => $this->request->getVar('Customername'),
+                'RoomCategory' => $this->request->getVar('RoomCategory'),
+                'BookingDate' => $this->request->getVar('BookingDate'),
+                'checkinDate' => $this->request->getVar('checkinDatae'),
+                'PaymentStatus' => $this->request->getVar('PaymentStatus')
+
+            ];
+
+
+           $save = $this->booking->save($data);
+            return $this->respond($save, 200);
+        } catch (\Throwable $e) {
+            return $this->respond(["message" => "Error: " . $e->getMessage()],);
+        }
+    }
+
     
 }

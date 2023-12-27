@@ -526,7 +526,6 @@
 
 
 </template>
-
 <script>
 
     import avaRoom from '@/components/count/AvailableRooms.vue'

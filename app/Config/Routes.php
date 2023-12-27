@@ -22,6 +22,7 @@ $routes->group('getRoom', static function($routes){
 $routes->group('user', static function($routes){
     $routes->post('register', 'SignupController::register');
     $routes->post('login', 'LoginController::loginAuth');
+    $routes->post('rent', 'RentController::rent');
 });
 
 $routes->post('pay', 'RoomController::makePayment');

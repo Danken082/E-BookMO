@@ -13,6 +13,7 @@
                                 <i class="ion ion-person-add"></i>
                             </div>
                             <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                            <count/>
                         </div>
                     </div>
                 </div>
@@ -28,10 +29,12 @@
 </style>
 
 <script>
+import count from '@/components/dashboard/include/count.vue'
 import sidebar from '@/components/dashboard/include/sidebar.vue'
     export default{
         components:{
-            sidebar
+            sidebar,
+            count
         }
     }
 </script>
