@@ -1,0 +1,677 @@
+CRITICAL - 2023-12-27 01:45:23 --> Too few arguments to function App\Controllers\RentController::getRoom(), 0 passed in C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\RentController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RentController->getRoom()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RentController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:43:06 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:43:07 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:43:35 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:43:35 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:43:46 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:43:46 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:43:46 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:43:46 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:43:54 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:43:54 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:43:56 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:43:56 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:44:03 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:44:03 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:44:30 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:44:30 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:44:32 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:44:32 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:44:45 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:44:45 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:44:49 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:44:49 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:44:50 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:44:50 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:44:52 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:44:52 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:45:13 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:45:13 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:46:32 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:46:32 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 10:47:03 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:47:04 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 10:48:03 --> Maximum execution time of 60 seconds exceeded
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Unknown column 'RoomCateg' in 'where clause'
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#3 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#6 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#9 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-12-27 10:48:15 --> mysqli_sql_exception: Unknown column 'RoomCateg' in 'where clause' in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 10:48:15 --> Unknown column 'RoomCateg' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(*) as transient
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 11:05:36 --> Maximum execution time of 60 seconds exceeded
+in APPPATH\Controllers\ViewController.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-27 11:06:41 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 185.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-27 11:36:47 --> Call to undefined method App\Models\RoomModel::count
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\ViewController.php(32): CodeIgniter\Model->__call('count', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->countAvarooms()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 11:43:02 --> Call to undefined method App\Models\RoomModel::count
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\ViewController.php(22): CodeIgniter\Model->__call('count', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 11:44:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `room`
+WHERE `RoomCateg` = 'Transient'
+ LIMIT 1' at line 2 in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(Ro...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(Ro...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(Ro...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(Ro...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->first()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 11:44:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `room`
+WHERE `RoomCateg` = 'Transient'
+ LIMIT 1' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(RoomCateg) as
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 11:44:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.
+FROM `room`
+WHERE `RoomCateg` = 'Transient'
+ LIMIT 1' at line 1 in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(Ro...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(Ro...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(Ro...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(Ro...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->first()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 11:44:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.
+FROM `room`
+WHERE `RoomCateg` = 'Transient'
+ LIMIT 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(RoomCateg) as .
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 11:44:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.
+FROM `room`
+WHERE `RoomCateg` = 'Transient'
+ LIMIT 1' at line 1 in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Count(Ro...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Count(Ro...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Count(Ro...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(Ro...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->first()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 11:44:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.
+FROM `room`
+WHERE `RoomCateg` = 'Transient'
+ LIMIT 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT Count(RoomCateg) as .
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 11:44:43 --> Empty statement is given for the field "Select"
+in SYSTEMPATH\Database\BaseBuilder.php on line 511.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(511): CodeIgniter\Database\Exceptions\DataException::forEmptyInputGiven('Select')
+ 2 SYSTEMPATH\Database\BaseBuilder.php(482): CodeIgniter\Database\BaseBuilder->maxMinAvgSum('', '', 'COUNT')
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->selectCount()
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\Model->__call('selectCount', [])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 11:44:47 --> Call to a member function where() on null
+in APPPATH\Controllers\ViewController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+ERROR - 2023-12-27 11:44:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*
+FROM `room`
+WHERE `RoomCateg` = 'Transient'
+ LIMIT 1' at line 1 in C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ASUS\Desktop\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\ASUS\Desktop\E-BookMO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\ASUS\Desktop\E-BookMO\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Desktop\E-BookMO\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Users\ASUS\Desktop\E-BookMO\app\Controllers\ViewController.php(22): CodeIgniter\BaseModel->first()
+#7 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+#8 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+#9 C:\Users\ASUS\Desktop\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Desktop\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Desktop\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2023-12-27 11:44:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*
+FROM `room`
+WHERE `RoomCateg` = 'Transient'
+ LIMIT 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS *
+FROM `room`
+WHERE `RoomCateg` = :RoomCateg:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\ViewController.php(22): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ViewController->Transient()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')

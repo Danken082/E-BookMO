@@ -1,5 +1,5 @@
 <template>
-<!-- <h1>TotalRooms: {{ count }}</h1>-->
+ <h1>TotalRooms: {{ count }}</h1>
 
 
 
@@ -250,7 +250,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 Available Rooms</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><avaRooms/></div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -528,27 +528,20 @@
 </template>
 
 <script>
-    import axios from 'axios'
+
+    import avaRoom from '@/components/count/AvailableRooms.vue'
+    import unvarooms from '@/components/count/Unavailable.vue'
+    import transient from '@/components/count/transient.vue'
+    import appartment from '@/components/count/appartment.vue'
+    import room from '@/components/count/Rooms.vue'
+    
     export default{
-        data(){
-            return{
-                count: null
-            }
-        },
-        created(){
-            this.getInfo()
-        },
-        methods:{
-          async getInfo(){
-        try {
-            const ins = await axios.get('/admin/transient')
-            this.count = ins.data;
-            console.log('Total Rooms:', this.count);
-        } catch (error) {
-            console.log('Error to count:', error);
-        }
-          }
-        }
-        
+       components:{
+        avaRoom,
+        unvarooms,
+        transient,
+        appartment,
+        room,
+       }
     }
 </script>

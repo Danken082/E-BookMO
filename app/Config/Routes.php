@@ -15,7 +15,9 @@ $routes->get('login', 'LoginController::index');
 $routes->get('view', 'RoomController::Index');
 $routes->get('try', 'LoginController::try');
 
-
+$routes->group('getRoom', static function($routes){
+    $routes->get('room/(:any)', 'RentController::getRoom/$1');
+});
 
 $routes->group('user', static function($routes){
     $routes->post('register', 'SignupController::register');

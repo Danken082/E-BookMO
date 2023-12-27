@@ -1,5 +1,5 @@
  <template>
-    <h1>TotalAppartment: {{ count }}</h1>
+     {{ count }}
     </template>
     
     <script>

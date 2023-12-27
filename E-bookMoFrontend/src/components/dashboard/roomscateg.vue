@@ -94,7 +94,7 @@
                                                     <td>{{ room.roomType }}</td>
                                                     <td>{{ room.Status }}</td>
                                                     <td>{{ room.MaxPerson }}</td>
-                                                    <td><button class="btn btn-danger" @click="delectRoom(room.roomID)">Delete</button></td>
+                                                    <td><button class="btn btn-danger" @click="delectRoom(room.roomID)">Delete</button>||<button class="btn btn-primary">Edit</button></td>
                                             </tr>
                                         </tbody>
                                     </table>

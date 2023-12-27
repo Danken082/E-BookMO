@@ -1,5 +1,5 @@
 <template>
-    <h1>Total Unavailable: {{ count }}</h1>
+     {{ count }}
 </template>
     
     <script>

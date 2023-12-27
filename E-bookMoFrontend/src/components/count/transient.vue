@@ -1,5 +1,5 @@
 <template>
-    <h1>TotalTransient: {{ count }}</h1>
+     {{ count }}
     </template>
     
     <script>

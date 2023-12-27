@@ -1,5 +1,5 @@
 <template>
-    <h1>Total AvailaRooms: {{ count }}</h1>
+    {{ count }}
     </template>
     
     <script>

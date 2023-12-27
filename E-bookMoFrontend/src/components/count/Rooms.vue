@@ -1,5 +1,5 @@
 <template>
-    <h1>TotalRooms: wergh{{ count }}</h1>
+    {{ count }}
     </template>
     
     <script>

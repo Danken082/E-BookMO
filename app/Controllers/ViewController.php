@@ -19,21 +19,21 @@ class ViewController extends ResourceController
         }
 
         public function Transient(){
-            $data = $this->room->select('Count(*) as transient')->where('RoomCateg', 'Transient')->findAll();
+            $data = $this->room->selectCount('RoomCateg')->where('RoomCateg', 'Transient')->first();
                 return $this->respond($data, 200);
         }
 
         public function Appartment(){
-            $data = $this->room->where('RoomCateg', 'Appartment')->countAll();
+            $data = $this->room->selectCount('RoomCateg')->where('RoomCateg', 'Appartment')->first();
             return $this->respond($data, 200);
         }
 
         public function countAvarooms(){
-            $data = $this->room->select("Count(*) as available")->where('Status', 'Available')->findAll();
+            $data = $this->room->select("Count(Status) as available")->where('Status', 'Available')->first();
             return $this->respond($data, 200);
         }
         public function countUnrooms(){
-            $data = $this->room->select("Count(Status) as unvailable")->where('Status', 'Unavailable')->findAll();
+            $data = $this->room->select("Count(Status) as unvailable")->where('Status', 'Unavailable')->first();
             return $this->respond($data, 200);
         }
 
