@@ -11,7 +11,7 @@
   
       <label for="PaymentStatus">Payment Status</label>
       <input type="text" placeholder="Enter payment status" v-model="PaymentStatus" id="PaymentStatus">
-  
+  33
       <button @click.prevent="rent">Submit</button>
       <button @click.prevent="resetForm">Reset</button>
     </form>
