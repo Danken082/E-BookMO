@@ -675,3 +675,259 @@ WHERE `RoomCateg` = :RoomCateg:
  7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
  9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Desktop\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:02:14 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:02:16 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:02:17 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:02:17 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:02:17 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:41 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:41 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:42 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:42 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:42 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:42 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:42 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:42 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:43 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:43 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:43 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:43 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:43 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:43 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:44 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:44 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:44 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:44 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:44 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:45 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:45 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:03:45 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:04:46 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:04:46 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:04:46 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:04:46 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-27 13:04:46 --> Undefined array key "ContactNo"
+in APPPATH\Controllers\LoginController.php on line 45.
+ 1 APPPATH\Controllers\LoginController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ContactNo"', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
