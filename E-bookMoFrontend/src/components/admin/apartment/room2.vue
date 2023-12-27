@@ -5,7 +5,6 @@
             <h2>Room 1</h2>
             <img src="images/2.jpg" class="image1" alt="apartment" width="300" height="300"><br><br>
             <a class="button" href="room2" >Book Now</a>
-            <p>Hello</p>
         </div>
         <a href="rent" class="bck">Back</a>
     </div>  
