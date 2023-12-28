@@ -39,7 +39,7 @@
         formData.append('PaymentStatus', this.PaymentStatus);
   
         try {
-          const response = await axios.post('user/booking', formData, {
+          const response = await axios.post('user/rent', formData, {
             headers: {
               'Content-Type': 'multipart/form-data',
             },
