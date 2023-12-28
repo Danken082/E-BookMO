@@ -3,7 +3,7 @@
 </template>
 <script>
 
-    import rent from '@/components/rent/rent.vue'
+    import rent from '@/components/rent/rental.vue'
     export default{
 
         components:{
