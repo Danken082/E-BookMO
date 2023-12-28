@@ -36,6 +36,7 @@ $routes->get('available', 'ViewController::countAvarooms');
 $routes->get('unavailable', 'ViewController::countUnrooms');
 $routes->group('admin', static function($routes){
                 $routes->get('user', 'LoginController::viewUsers');
+                $routes->post('deleteUser', 'LoginController::delUser');
                $routes->post('save', 'RoomController::insertRoom');
                $routes->post('deleteRoom', 'RoomController::delRoom');
                $routes->post('try', 'RoomController::try');

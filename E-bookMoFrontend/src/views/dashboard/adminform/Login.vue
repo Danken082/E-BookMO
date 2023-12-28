@@ -12,48 +12,58 @@
         </div>
 
         <!--Forms-->
-        <div class="box-2">
-            <div class="login-form-container">
-                <h1>Login Form</h1>
-                <input type="text" placeholder="Username" class="input-field">
-                <br><br>
-                <input type="password" placeholder="Password" class="input-field">
-                <br><br>
-                <button class="login-button" type="button">Login</button>
-            </div>
-
-            <!--Create Container for Signup form-->
-            <div class="signup-form-container">
-                <h1>Sign Up Form</h1>
-                <input type="text" placeholder="Username" class="input-field">
-                <br><br>
-                <input type="password" placeholder="Password" class="input-field">
-                <br><br>
-                <button class="signup-button" type="button">Sign Up</button>
-            </div>
-        </div>
+        <form @submit.prevent="login">
+          <div class="box-2">
+              <div class="login-form-container">
+                  <h1>Login Form</h1>
+                  <input type="text" placeholder="Username" class="input-field">
+                  <br><br>
+                  <input type="password" placeholder="Password" class="input-field">
+                  <br><br>
+                  <button class="login-button" type="submit">Login</button>
+              </div><br>
+              
+              <!--Create Container for Signup form-->
+              <div class="signup-form-container">
+                  <h1>Sign Up Form</h1>
+                  <input type="text" placeholder="Username" class="input-field">
+                  <br><br>
+                  <input type="password" placeholder="Password" class="input-field">
+                  <br><br>
+                  <button class="signup-button" type="button">Sign Up</button>
+              </div>
+          </div>
+        </form>
     </div>
 </template>
 
-    <script>
-        function signup()
-        {
-            document.querySelector(".login-form-container").style.cssText = "display: none;";
-            document.querySelector(".signup-form-container").style.cssText = "display: block;";
-            document.querySelector(".container").style.cssText = "background: linear-gradient(to bottom, rgb(56, 189, 149),  rgb(28, 139, 106));";
-            document.querySelector(".button-1").style.cssText = "display: none";
-            document.querySelector(".button-2").style.cssText = "display: block";
-        };
-
-        function login()
-        {
-            document.querySelector(".signup-form-container").style.cssText = "display: none;";
-            document.querySelector(".login-form-container").style.cssText = "display: block;";
-            document.querySelector(".container").style.cssText = "background: linear-gradient(to bottom, rgb(6, 108, 224),  rgb(14, 48, 122));";
-            document.querySelector(".button-2").style.cssText = "display: none";
-            document.querySelector(".button-1").style.cssText = "display: block";
-        };
-    </script>
+<script>
+    
+import axios from 'axios'
+export default{
+    data(){
+     return{
+       email:'',
+       password:''
+     }
+    
+    },
+    methods:{
+         async login(){
+         
+           try {
+             const response = await axios.post('user/login',  {
+               email: this.email,
+               password: this.password
+             })
+             this.$router.push('/home')
+           } catch (error) {
+             console.log(error)
+           }
+         }
+       }
+} 
+</script> 
 
 <style>
 *{
@@ -128,7 +138,7 @@ body{
 {
   color: black;
   font-size: 24px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .input-field

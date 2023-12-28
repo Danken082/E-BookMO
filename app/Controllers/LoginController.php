@@ -94,4 +94,11 @@ public function viewUsers(){
 
 }
 
+public function delUser(){
+    $json = $this->request->getJSON();
+    $userID = $json->UserID;
+    $user = $this->user->delete($userID);
+    return $this->respond($user, 200);
+}
+
 }

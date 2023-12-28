@@ -7,13 +7,13 @@ use CodeIgniter\Model;
 class BookingModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'bookings';
-    protected $primaryKey       = 'id';
+    protected $table            = 'booking';
+    protected $primaryKey       = 'bookingID';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['CustomerID', 'roomID', 'BookingDate', 'checkinDate', 'chechoutDate', 'DownPayment', 'Pa '];
+    protected $allowedFields    = ['Customername', 'RoomCategory', 'checkinDate', 'PaymentStatus'];
 
     // Dates
     protected $useTimestamps = false;

@@ -7,7 +7,7 @@
       <input type="text" placeholder="Enter room category" v-model="RoomCategory" id="RoomCategory">
   
       <label for="CheckinDate">Check-In Date</label>
-      <input type="date" v-model="CheckinDate" id="CheckinDate">
+      <input type="date" v-model="checkinDate" id="checkinDate">
   
       <label for="PaymentStatus">Payment Status</label>
       <input type="text" placeholder="Enter payment status" v-model="PaymentStatus" id="PaymentStatus">
@@ -25,7 +25,7 @@
       return {
         Customername: '',
         RoomCategory: '',
-        CheckinDate: '',
+        checkinDate: '',
         PaymentStatus: '',
       };
     },
@@ -35,7 +35,7 @@
         const formData = new FormData();
         formData.append('Customername', this.Customername);
         formData.append('RoomCategory', this.RoomCategory);
-        formData.append('CheckinDate', this.CheckinDate);
+        formData.append('checkinDate', this.checkinDate);
         formData.append('PaymentStatus', this.PaymentStatus);
   
         try {
@@ -60,7 +60,7 @@
       resetForm() {
         this.Customername = '';
         this.RoomCategory = '';
-        this.CheckinDate = '';
+        this.checkinDate = '';
         this.PaymentStatus = '';
       },
     },

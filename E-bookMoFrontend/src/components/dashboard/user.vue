@@ -16,15 +16,15 @@
                                     <th class="text-center"> User ID</th>
                                     <th class="text-center">Username</th>
                                     <th class="text-center">User Role</th>
-                                </tr>
                                     <th class="text-center">Action</th>
+                                </tr>
                             </thead>
                             <tbody>
-                                <tr v-for="user in user">
-                                    <td class="text-center">{{ user.UserID }}</td>
-                                    <td class="text-center">{{ user.userRole }}</td>
-                                    <td class="text-center">{{ user.username }}</td>
-                                    <td><button class="btn btn-danger" @click="deleteUser(user.UserID)">Delete</button></td>
+                                <tr v-for="userInfo in userInfo">
+                                    <td class="text-center">{{ userInfo.UserID }}</td>
+                                    <td class="text-center">{{ userInfo.username }}</td>
+                                    <td class="text-center">{{ userInfo.userRole }}</td>
+                                    <td><button class="btn btn-danger" @click="deleteUser(userInfo.UserID)">Delete</button></td>
      
                                 </tr>
                                 
@@ -53,6 +53,12 @@ import sidebar from '@/components/dashboard/include/sidebar.vue'
             this.getUser()
         },
         methods:{
+            async deleteUser(UserID){
+                await axios.post('admin/deleteUser',{
+                    userID: UserID
+                })
+                this.getUser()
+            },
             async getUser(){
                 try {
                     const ans = await axios.get('admin/user')

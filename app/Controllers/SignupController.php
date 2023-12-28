@@ -33,6 +33,7 @@ public function hi(){
         {
        $data= 
             [
+                'userRole' => $this->request->getVar('userRole'),
                 'LastName' => $this->request->getVar('LastName'),
                 'FirstName' => $this->request->getVar('FirstName'),
                 'ContactNo' => $this->request->getVar('ContactNo'),

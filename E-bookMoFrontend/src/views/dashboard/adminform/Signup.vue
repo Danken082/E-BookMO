@@ -49,7 +49,7 @@
                     id="contactNo" 
                     name="contactNo" 
                     class="form-control"  
-                    v-model="contactNo" 
+                    v-model="ContactNo" 
                     required/>
                     <label class="contactNo">Contact Number</label>
                   </div>
@@ -100,10 +100,11 @@
   </template>
   
   <script>
+  import axios from 'axios'
   export default{
     data(){
       return {
-        LastName: '',
+      LastName: '',
       FirstName: '',
       userRole:'Admin',
       ContactNo: '',

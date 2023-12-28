@@ -77,6 +77,7 @@ class RoomController extends ResourceController
         $room = $this->room->delete($RoomID);
         return $this->respond($room, 200);
     }
+    
     public function update($id = null) { 
         $json = $this->request->getJSON(); 
         $data = [ 'title' => $json->title, 

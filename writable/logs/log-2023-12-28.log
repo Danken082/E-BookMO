@@ -1,0 +1,109 @@
+ERROR - 2023-12-28 10:08:19 --> mysqli_sql_exception: Column 'BookingDate' cannot be null in C:\laragon\www\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\laragon\www\E-BookMO\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\laragon\www\E-BookMO\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\E-BookMO\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\E-BookMO\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\E-BookMO\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\E-BookMO\app\Controllers\RentController.php(41): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\E-BookMO\system\CodeIgniter.php(919): App\Controllers\RentController->rent()
+#10 C:\laragon\www\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RentController))
+#11 C:\laragon\www\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+ERROR - 2023-12-28 10:08:59 --> mysqli_sql_exception: Column 'BookingDate' cannot be null in C:\laragon\www\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\laragon\www\E-BookMO\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\laragon\www\E-BookMO\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\E-BookMO\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\E-BookMO\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\E-BookMO\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\E-BookMO\app\Controllers\RentController.php(41): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\E-BookMO\system\CodeIgniter.php(919): App\Controllers\RentController->rent()
+#10 C:\laragon\www\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RentController))
+#11 C:\laragon\www\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+ERROR - 2023-12-28 10:15:34 --> mysqli_sql_exception: Column 'checkinDate' cannot be null in C:\laragon\www\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\laragon\www\E-BookMO\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\laragon\www\E-BookMO\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\E-BookMO\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\E-BookMO\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\E-BookMO\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\E-BookMO\app\Controllers\RentController.php(41): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\E-BookMO\system\CodeIgniter.php(919): App\Controllers\RentController->rent()
+#10 C:\laragon\www\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RentController))
+#11 C:\laragon\www\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+ERROR - 2023-12-28 10:16:02 --> mysqli_sql_exception: Column 'checkinDate' cannot be null in C:\laragon\www\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\laragon\www\E-BookMO\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\laragon\www\E-BookMO\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\E-BookMO\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\E-BookMO\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\E-BookMO\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\E-BookMO\app\Controllers\RentController.php(41): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\E-BookMO\system\CodeIgniter.php(919): App\Controllers\RentController->rent()
+#10 C:\laragon\www\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RentController))
+#11 C:\laragon\www\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+ERROR - 2023-12-28 10:16:11 --> mysqli_sql_exception: Column 'checkinDate' cannot be null in C:\laragon\www\E-BookMO\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\E-BookMO\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\laragon\www\E-BookMO\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\laragon\www\E-BookMO\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\laragon\www\E-BookMO\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\E-BookMO\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\E-BookMO\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\E-BookMO\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\E-BookMO\app\Controllers\RentController.php(41): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\E-BookMO\system\CodeIgniter.php(919): App\Controllers\RentController->rent()
+#10 C:\laragon\www\E-BookMO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RentController))
+#11 C:\laragon\www\E-BookMO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\E-BookMO\public\index.php(90): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\E-BookMO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2023-12-28 11:40:57 --> Undefined property: stdClass::$UserID
+in APPPATH\Controllers\LoginController.php on line 99.
+ 1 APPPATH\Controllers\LoginController.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$UserID', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->delUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-28 11:42:10 --> Undefined property: stdClass::$UserID
+in APPPATH\Controllers\LoginController.php on line 99.
+ 1 APPPATH\Controllers\LoginController.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$UserID', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->delUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')
+CRITICAL - 2023-12-28 11:44:50 --> Undefined property: stdClass::$UserID
+in APPPATH\Controllers\LoginController.php on line 99.
+ 1 APPPATH\Controllers\LoginController.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$UserID', 'C:\\laragon\\www\\E-BookMO\\app\\Controllers\\LoginController.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->delUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(90): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\E-BookMO\\public\\index.php')

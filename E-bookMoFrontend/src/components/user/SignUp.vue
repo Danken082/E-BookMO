@@ -1,4 +1,3 @@
-
 <template>
   <headers/>  
   <section class="vh-100">
